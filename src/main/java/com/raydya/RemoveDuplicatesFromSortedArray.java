@@ -6,15 +6,15 @@ public class RemoveDuplicatesFromSortedArray {
             return 0;
         }
 
-        int j = 0;
+        int i = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[j] != nums[i]) {
-                j++;
-                nums[j] = nums[i];
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
             }
         }
 
-        return j + 1;
+        return i + 1;
     }
 }
