@@ -2,18 +2,26 @@ package com.raydya;
 
 public class Sqrt {
     public int sqrt(int x) {
-        for (long i = 1; i < Integer.MAX_VALUE; i++) {
-            final long i1 = i * i;
+        if (x < 2) {
+            return x;
+        }
 
-            if (i1 == x) {
-                return (int) i;
-            }
+        long left = 1;
+        long right = x;
 
-            if (i1 > x) {
-                return (int) (i - 1);
+        while (left < right) {
+            long mid = left + (right - left) / 2;
+
+            final long i = mid * mid;
+            if (i == x) {
+                return (int) mid;
+            } else if (i > x) {
+                right = mid;
+            } else {
+                left = mid + 1;
             }
         }
 
-        return 1;
+        return (int) left - 1;
     }
 }
