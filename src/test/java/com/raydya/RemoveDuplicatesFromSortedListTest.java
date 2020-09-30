@@ -1,5 +1,6 @@
 package com.raydya;
 
+import com.raydya.data.type.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 

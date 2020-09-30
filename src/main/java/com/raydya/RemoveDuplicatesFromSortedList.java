@@ -1,5 +1,7 @@
 package com.raydya;
 
+import com.raydya.data.type.ListNode;
+
 public class RemoveDuplicatesFromSortedList {
 
     public ListNode deleteDuplicates(ListNode head) {

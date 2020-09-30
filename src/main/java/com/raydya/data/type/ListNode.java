@@ -1,9 +1,9 @@
-package com.raydya;
+package com.raydya.data.type;
 
 public class ListNode {
-    int val;
+    public int val;
 
-    ListNode next;
+    public ListNode next;
 
     public ListNode() {
     }
