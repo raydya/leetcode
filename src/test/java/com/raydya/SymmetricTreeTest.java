@@ -39,4 +39,12 @@ public class SymmetricTreeTest {
 
         Assert.assertFalse(isSymmetric);
     }
+
+    @Test
+    public void test3() {
+        final SymmetricTree solution = new SymmetricTree();
+        final boolean isSymmetric = solution.isSymmetric(null);
+
+        Assert.assertTrue(isSymmetric);
+    }
 }
