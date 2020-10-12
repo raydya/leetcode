@@ -76,4 +76,14 @@ public class IntersectionOfTwoLinkedListTest {
 
         Assert.assertEquals(a1, intersectionNode);
     }
+
+    @Test
+    public void test6() {
+        final ListNode a1 = new ListNode(1);
+
+        final IntersectionOfTwoLinkedList solution = new IntersectionOfTwoLinkedList();
+        final ListNode intersectionNode = solution.getIntersectionNode(a1, null);
+
+        Assert.assertNull(intersectionNode);
+    }
 }
