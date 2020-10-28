@@ -2,10 +2,8 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class BinaryTreePaths {
 
@@ -14,16 +12,21 @@ public class BinaryTreePaths {
     }
 
     private List<String> binaryTreePath(String path, TreeNode node) {
-        if (node == null) return Collections.emptyList();
+        if (node == null) return new ArrayList<>();
 
         final String nPath = path.equals("") ? String.valueOf(node.val) : path + "->" + node.val;
-        if (isChild(node)) return Collections.singletonList(nPath);
+        if (isChild(node)) {
+            final ArrayList<String> singleton = new ArrayList<>();
+            singleton.add(nPath);
+            return singleton;
+        }
 
         final List<String> leftPaths = binaryTreePath(nPath, node.left);
         final List<String> rightPaths = binaryTreePath(nPath, node.right);
 
-        return Stream.concat(leftPaths.stream(), rightPaths.stream())
-            .collect(Collectors.toList());
+        leftPaths.addAll(rightPaths);
+
+        return leftPaths;
     }
 
     private boolean isChild(TreeNode node) {
