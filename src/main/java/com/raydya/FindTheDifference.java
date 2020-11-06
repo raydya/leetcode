@@ -1,6 +1,8 @@
 package com.raydya;
 
 public class FindTheDifference {
+
+    // constraints: t.length - s.length = 1
     public char findTheDifference(String s, String t) {
         int[] h = new int[26];
 
