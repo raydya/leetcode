@@ -8,7 +8,7 @@ public class IsSubsequence {
         int r = 0;
 
         while (r < t.length()) {
-            if (l >= s.length()) break;
+            if (l >= s.length()) return true;
 
             final char sc = s.charAt(l);
             final char tc = t.charAt(r);
