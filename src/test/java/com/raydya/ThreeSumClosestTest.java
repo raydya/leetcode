@@ -19,4 +19,12 @@ public class ThreeSumClosestTest {
 
         Assert.assertEquals(3, threeSumClosest);
     }
+
+    @Test
+    public void test3() {
+        final ThreeSumClosest solution = new ThreeSumClosest();
+        final int threeSumClosest = solution.threeSumClosest(new int[]{-1, 0, 1, 2, -1, -4}, 0);
+
+        Assert.assertEquals(0, threeSumClosest);
+    }
 }
