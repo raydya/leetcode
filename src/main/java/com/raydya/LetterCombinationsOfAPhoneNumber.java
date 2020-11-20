@@ -16,14 +16,19 @@ public class LetterCombinationsOfAPhoneNumber {
             holder.add(letters);
         }
 
+        return cartesianProduct(holder);
+    }
+
+    private List<String> cartesianProduct(List<List<String>> lists) {
         int solutions = 1;
-        for (int i = 0; i < holder.size(); solutions *= holder.get(i).size(), i++) ;
+        for (int i = 0; i < lists.size(); solutions *= lists.get(i).size(), i++) ;
         List<String> products = new ArrayList<>();
         for (int i = 0; i < solutions; i++) {
             int j = 1;
             StringBuilder product = new StringBuilder();
-            for (List<String> set : holder) {
-                final String s = set.get((i / j) % set.size());
+            for (List<String> set : lists) {
+                final int n = (i / j) % set.size();
+                final String s = set.get(n);
                 product.append(s);
                 j *= set.size();
             }
