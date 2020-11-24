@@ -31,7 +31,7 @@ public class RemoveNthNodeFromEndOfList {
     private ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode cursor = head;
-        ListNode holder = null;
+        ListNode holder;
 
         while (cursor != null) {
             holder = cursor.next;
