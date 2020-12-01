@@ -63,12 +63,4 @@ public class ValidSudokuTest {
 
         Assert.assertFalse(validSudoku);
     }
-
-    @Test
-    public void test4() {
-        final ValidSudoku solution = new ValidSudoku();
-        final int[] position = solution.getPosition(3, 0);
-
-        Assert.assertArrayEquals(new int[]{0, 3}, position);
-    }
 }
