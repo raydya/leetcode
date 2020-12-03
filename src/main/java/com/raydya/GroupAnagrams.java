@@ -13,12 +13,15 @@ public class GroupAnagrams {
         for (final String str : strs) {
             final char[] charArray = str.toCharArray();
             Arrays.sort(charArray);
-            final String s = Arrays.toString(charArray);
+            final String s = new String(charArray);
 
-            if (!holder.containsKey(s)) {
-                holder.put(s, new ArrayList<>());
+            if (holder.containsKey(s)) {
+                holder.get(s).add(str);
+            } else {
+                final List<String> list = new ArrayList<>();
+                list.add(str);
+                holder.put(s, list);
             }
-            holder.get(s).add(str);
         }
 
         return new ArrayList<>(holder.values());
