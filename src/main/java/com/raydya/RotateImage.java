@@ -1,6 +1,8 @@
 package com.raydya;
 
 public class RotateImage {
+
+    // I haven't rotate the array in place, instead of allocate a new matrix
     public void rotate(int[][] matrix) {
         final int n = matrix.length;
 
