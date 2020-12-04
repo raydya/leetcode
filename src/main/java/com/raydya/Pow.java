@@ -1,6 +1,9 @@
 package com.raydya;
 
 public class Pow {
+    /**
+     * x^n = (x^2)^(n/2)
+     */
     public double myPow(double x, int n) {
         double res = 1.0;
 
