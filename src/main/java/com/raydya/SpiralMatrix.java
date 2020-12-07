@@ -11,6 +11,7 @@ public class SpiralMatrix {
         int r1 = 0, r2 = matrix.length - 1;
         int c1 = 0, c2 = matrix[0].length - 1;
 
+        // LAYER BY LAYER
         while (r1 <= r2 && c1 <= c2) {
             // TOP
             for (int c = c1; c <= c2; c++) {
@@ -32,6 +33,7 @@ public class SpiralMatrix {
                     ans.add(matrix[r][c1]);
                 }
             }
+            // INNER LAYER
             r1++;
             r2--;
             c1++;
