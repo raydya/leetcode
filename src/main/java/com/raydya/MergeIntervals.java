@@ -6,12 +6,7 @@ import java.util.LinkedList;
 
 public class MergeIntervals {
     public int[][] merge(int[][] intervals) {
-        Comparator<int[]> comp = new Comparator<int[]>() {
-            @Override
-            public int compare(int[] a, int[] b) {
-                return a[0] - b[0];
-            }
-        };
+        Comparator<int[]> comp = Comparator.comparingInt(a -> a[0]);
 
         Arrays.sort(intervals, comp);
 

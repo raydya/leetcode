@@ -9,12 +9,7 @@ public class InsertInterval {
         intervals = Arrays.copyOf(intervals, intervals.length + 1);
         intervals[intervals.length - 1] = newInterval;
 
-        Comparator<int[]> comp = new Comparator<int[]>() {
-            @Override
-            public int compare(int[] a, int[] b) {
-                return a[0] - b[0];
-            }
-        };
+        Comparator<int[]> comp = Comparator.comparingInt(a -> a[0]);
 
         Arrays.sort(intervals, comp);
 
