@@ -1,13 +1,11 @@
 package com.raydya;
 
-import java.util.Arrays;
-
 public class MinimumPathSum {
     public int minPathSum(int[][] grid) {
         final int m = grid.length;
         final int n = grid[0].length;
 
-        final int[][] dp = Arrays.copyOf(grid, grid.length);
+        final int[][] dp = new int[m][n];
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -21,7 +19,7 @@ public class MinimumPathSum {
                 } else {
                     t = Math.min(lw, uw);
                 }
-                dp[i][j] = t + dp[i][j];
+                dp[i][j] = t + grid[i][j];
             }
         }
 
