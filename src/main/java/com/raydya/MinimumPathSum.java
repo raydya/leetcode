@@ -2,27 +2,24 @@ package com.raydya;
 
 public class MinimumPathSum {
     public int minPathSum(int[][] grid) {
-        final int m = grid.length;
-        final int n = grid[0].length;
+        //init the first row
+        for (int i = 1; i < grid[0].length; i++) {
+            grid[0][i] += grid[0][i - 1];
+        }
 
-        final int[][] dp = new int[m][n];
+        //init the first col
+        for (int i = 1; i < grid.length; i++) {
+            grid[i][0] += grid[i - 1][0];
+        }
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                final int l = i - 1;
-                final int u = j - 1;
-                final int lw = l < 0 ? 0 : dp[l][j];
-                final int uw = u < 0 ? 0 : dp[i][u];
-                int t;
-                if (l < 0 || u < 0) {
-                    t = Math.max(lw, uw);
-                } else {
-                    t = Math.min(lw, uw);
-                }
-                dp[i][j] = t + grid[i][j];
+        //get the other result, all the elements' val are the min path to their point.
+        for (int i = 1; i < grid.length; i++) {
+            for (int j = 1; j < grid[0].length; j++) {
+                grid[i][j] += Math.min(grid[i - 1][j], grid[i][j - 1]);
             }
         }
 
-        return dp[m - 1][n - 1];
+        //return the last element
+        return grid[grid.length - 1][grid[0].length - 1];
     }
 }
