@@ -1,26 +1,29 @@
 package com.raydya;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SimplifyPath {
     public String simplifyPath(String path) {
-        final String[] strings = path.split("/");
-
-        int c = 0;
-        StringBuilder ret = new StringBuilder();
-        for (int i = strings.length - 1; i >= 0; i--) {
-            final String s = strings[i];
-            if ("..".equals(s)) {
-                c++;
-            } else if (".".equals(s) || "".equals(s)) {
-                // do nothing
-            } else {
-                if (c > 0) {
-                    c--;
-                } else {
-                    ret.insert(0, "/" + s);
+        String[] dirs = path.split("/");
+        final List<String> list = new ArrayList<>();
+        for (String dir : dirs) {
+            if (!dir.isEmpty()) {
+                if (dir.equals("..")) {
+                    if (!list.isEmpty())
+                        list.remove(list.size() - 1);
+                } else if (!dir.equals(".")) {
+                    list.add(dir);
                 }
             }
         }
-
-        return ret.toString().equals("") ? "/" : ret.toString();
+        StringBuilder sb = new StringBuilder();
+        for (String s : list) {
+            sb.append("/").append(s);
+        }
+        if (sb.length() == 0) {
+            sb.append("/");
+        }
+        return sb.toString();
     }
 }
