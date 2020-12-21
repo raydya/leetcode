@@ -2,7 +2,7 @@ package com.raydya;
 
 public class SetMatrixZeroes {
     public void setZeroes(int[][] matrix) {
-        Boolean isCol = false;
+        boolean isCol = false;
         int m = matrix.length;
         int n = matrix[0].length;
 
