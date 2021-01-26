@@ -3,7 +3,6 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class BinaryTreeLevelOrderTraversal {
