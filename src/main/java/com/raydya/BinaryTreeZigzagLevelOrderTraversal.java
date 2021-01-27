@@ -5,24 +5,12 @@ import com.raydya.data.type.TreeNode;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class BinaryTreeZigzagLevelOrderTraversal {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         if (root == null) return Collections.emptyList();
         List<List<Integer>> output = new ArrayList<>();
         backtrace(root, output, 0);
-
-        final AtomicBoolean zig = new AtomicBoolean(false);
-        output.forEach(l -> {
-            if (zig.get()) {
-                Collections.reverse(l);
-                zig.set(false);
-            } else {
-                zig.set(true);
-            }
-        });
-
         return output;
     }
 
@@ -34,7 +22,11 @@ public class BinaryTreeZigzagLevelOrderTraversal {
             output.add(list);
         } else {
             final List<Integer> list = output.get(level);
-            list.add(node.val);
+            if (level % 2 == 0) {
+                list.add(node.val);
+            } else {
+                list.add(0, node.val);
+            }
         }
 
         backtrace(node.left, output, level + 1);
