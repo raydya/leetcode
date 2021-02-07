@@ -3,7 +3,7 @@ package com.raydya.utils;
 import com.raydya.data.type.Node;
 
 public class NodeUtil {
-    public static Node build(int[] nums) {
+    public static Node build(Integer[] nums) {
         if (nums == null || nums.length == 0) return null;
         final int val = nums[0];
         final Node root = new Node(val);
@@ -12,9 +12,10 @@ public class NodeUtil {
         return root;
     }
 
-    private static Node buildSub(int[] nums, int index, int level, int levelStart) {
+    private static Node buildSub(Integer[] nums, int index, int level, int levelStart) {
         if (index >= nums.length) return null;
-        final int val = nums[index];
+        final Integer val = nums[index];
+        if (val == null) return null;
         final Node node = new Node(val);
         final int capacity = (int) Math.pow(2, level);
         final int offset = index - levelStart;

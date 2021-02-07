@@ -7,7 +7,7 @@ import org.junit.Test;
 public class NodeUtilTest {
     @Test
     public void test1() {
-        final Node node = NodeUtil.build(new int[]{1, 2, 3, 4, 5, 6, 7});
+        final Node node = NodeUtil.build(new Integer[]{1, 2, 3, 4, 5, 6, 7});
 
         Assert.assertEquals(1, node.val);
         Assert.assertEquals(2, node.left.val);
