@@ -1,5 +1,9 @@
 package com.raydya;
 
+/**
+ * 数学解
+ * 拉格朗日四平方定理
+ */
 public class PerfectSquares {
     protected boolean isSquare(int n) {
         int sq = (int) Math.sqrt(n);
