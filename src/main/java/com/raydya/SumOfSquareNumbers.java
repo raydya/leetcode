@@ -8,7 +8,7 @@ public class SumOfSquareNumbers {
             final int k = (int) Math.pow(i, 2);
             final int j = c - k;
             final double v = Math.sqrt(j);
-            if (v == Math.floor(v)) return true;
+            if (v == (int) v) return true;
         }
 
         return false;
