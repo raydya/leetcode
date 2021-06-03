@@ -18,4 +18,15 @@ public class BinaryTreePostorderTraversalTest {
 
         Assert.assertArrayEquals(new Integer[]{3, 2, 1}, output.toArray());
     }
+
+
+    @Test
+    public void test2() {
+        final TreeNode root = TreeNodeUtil.build(Arrays.asList(3, 1, 2));
+
+        final BinaryTreePostorderTraversal solution = new BinaryTreePostorderTraversal();
+        final List<Integer> output = solution.postorderTraversal(root);
+
+        Assert.assertArrayEquals(new Integer[]{1, 2, 3}, output.toArray());
+    }
 }
