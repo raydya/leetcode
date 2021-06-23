@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NAryTreePreorderTraversal {
-    private List<Integer> ret = new ArrayList<>();
+    private final List<Integer> ret = new ArrayList<>();
 
     public List<Integer> preorder(Node root) {
         recursion(root);
