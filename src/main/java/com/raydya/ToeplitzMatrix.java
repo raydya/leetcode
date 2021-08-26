@@ -13,15 +13,4 @@ public class ToeplitzMatrix {
         }
         return true;
     }
-
-    private boolean isTopAndRightSame(int[][] matrix, int c, int r) {
-        final int top = r - 1;
-        final int right = c + 1;
-        if (top < 0) return true;
-        if (right > matrix[0].length - 1) return true;
-        if (matrix[top][c] == matrix[r][right]) {
-            return isTopAndRightSame(matrix, c, top) && isTopAndRightSame(matrix, right, r);
-        }
-        return false;
-    }
 }
