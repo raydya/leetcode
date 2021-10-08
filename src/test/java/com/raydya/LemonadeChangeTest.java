@@ -43,4 +43,20 @@ public class LemonadeChangeTest {
 
         Assert.assertTrue(output);
     }
+
+    @Test
+    public void test6() {
+        final LemonadeChange solution = new LemonadeChange();
+        final boolean output = solution.lemonadeChange(new int[]{5, 5, 5, 5, 20, 10, 5, 20, 10, 5});
+
+        Assert.assertFalse(output);
+    }
+
+    @Test
+    public void test7() {
+        final LemonadeChange solution = new LemonadeChange();
+        final boolean output = solution.lemonadeChange(new int[]{5, 5, 5, 10, 5, 5, 5, 5, 5, 20});
+
+        Assert.assertTrue(output);
+    }
 }
