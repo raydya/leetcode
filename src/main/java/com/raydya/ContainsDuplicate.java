@@ -5,13 +5,11 @@ import java.util.Set;
 
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
-        if (nums.length == 1) return false;
-
-        Set<Integer> set = new HashSet<>(nums.length);
-
+        Set<Integer> set = new HashSet<>();
         for (final int num : nums) {
-            if (set.contains(num)) return true;
-            set.add(num);
+            if (!set.add(num)) {
+                return true;
+            }
         }
 
         return false;
