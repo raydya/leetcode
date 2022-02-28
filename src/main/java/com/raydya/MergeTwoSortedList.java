@@ -4,23 +4,23 @@ import com.raydya.data.type.ListNode;
 
 public class MergeTwoSortedList {
 
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null) {
-            return l2;
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
         }
 
-        if (l2 == null) {
-            return l1;
+        if (list2 == null) {
+            return list1;
         }
 
         ListNode head = null;
 
-        if (l1.val <= l2.val) {
-            head = l1;
-            head.next = mergeTwoLists(l1.next, l2);
+        if (list1.val <= list2.val) {
+            head = list1;
+            head.next = mergeTwoLists(list1.next, list2);
         } else {
-            head = l2;
-            head.next = mergeTwoLists(l1, l2.next);
+            head = list2;
+            head.next = mergeTwoLists(list1, list2.next);
         }
 
         return head;
