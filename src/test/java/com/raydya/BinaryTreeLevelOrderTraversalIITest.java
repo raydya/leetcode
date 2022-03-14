@@ -1,12 +1,11 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class BinaryTreeLevelOrderTraversalIITest {
 
@@ -24,6 +23,7 @@ public class BinaryTreeLevelOrderTraversalIITest {
 
         Assert.assertArrayEquals(Arrays.asList(15, 7).toArray(), levelOrderBottom.get(0).toArray());
         Assert.assertArrayEquals(Arrays.asList(9, 20).toArray(), levelOrderBottom.get(1).toArray());
-        Assert.assertArrayEquals(Collections.singletonList(3).toArray(), levelOrderBottom.get(2).toArray());
+        Assert.assertArrayEquals(Collections.singletonList(3).toArray(),
+            levelOrderBottom.get(2).toArray());
     }
 }

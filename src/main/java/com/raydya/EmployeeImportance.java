@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class EmployeeImportance {
+
     private Map<Integer, Employee> map;
     private int importance = 0;
 
@@ -25,7 +26,9 @@ public class EmployeeImportance {
     }
 
     private void iterator(List<Integer> subordinates) {
-        if (subordinates.isEmpty()) return;
+        if (subordinates.isEmpty()) {
+            return;
+        }
         for (final Integer subordinate : subordinates) {
             final Employee e = map.get(subordinate);
             importance += e.importance;
@@ -34,6 +37,7 @@ public class EmployeeImportance {
     }
 
     public static class Employee {
+
         public int id;
         public int importance;
         public List<Integer> subordinates;

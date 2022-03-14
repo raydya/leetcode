@@ -61,7 +61,9 @@ public class AddBinary {
     }
 
     private char charAt(String str, int index) {
-        if ((index < 0) || (index >= str.length())) return '0';
+        if ((index < 0) || (index >= str.length())) {
+            return '0';
+        }
         return str.charAt(index);
     }
 }

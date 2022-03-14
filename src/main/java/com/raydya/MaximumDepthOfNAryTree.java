@@ -3,10 +3,15 @@ package com.raydya;
 import java.util.List;
 
 public class MaximumDepthOfNAryTree {
+
     public int maxDepth(Node root) {
-        if (root == null) return 0;
+        if (root == null) {
+            return 0;
+        }
         final List<Node> children = root.children;
-        if (children == null) return 1;
+        if (children == null) {
+            return 1;
+        }
 
         int max = 0;
         for (final Node node : children) {
@@ -18,6 +23,7 @@ public class MaximumDepthOfNAryTree {
     }
 
     public static class Node {
+
         public int val;
         public List<Node> children;
 

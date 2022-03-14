@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SurroundedRegions {
+
     public void solve(char[][] board) {
         if (board.length < 3 || board[0].length < 3) {
             return;
@@ -33,7 +34,7 @@ public class SurroundedRegions {
     }
 
     private void markBorderConnectedZeros(char[][] board, int i, int j,
-                                          int r, int c, boolean[][] visited) {
+        int r, int c, boolean[][] visited) {
         if (i < 0 || i >= r) {
             return;
         }

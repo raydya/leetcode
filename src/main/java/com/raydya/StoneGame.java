@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class StoneGame {
+
     public boolean stoneGame(int[] piles) {
         int length = piles.length;
         int[] dp = Arrays.stream(piles, 0, length).toArray();

@@ -4,6 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class BasicCalculatorII {
+
     public int calculate(String s) {
         Deque<Integer> stack = new LinkedList<>();
         char preSign = '+';

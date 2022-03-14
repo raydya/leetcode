@@ -12,9 +12,13 @@ public class BestTimeToBuyAndSellStock {
                 buy = price;
                 sell = -1;
             }
-            if (sell == -1 || price > sell) sell = price;
+            if (sell == -1 || price > sell) {
+                sell = price;
+            }
             final int i = sell - buy;
-            if (max == -1 || i > max) max = i;
+            if (max == -1 || i > max) {
+                max = i;
+            }
         }
 
         return Math.max(max, sell - buy);

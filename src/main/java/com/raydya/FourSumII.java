@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FourSumII {
+
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
         Map<Integer, Integer> countAB = new HashMap<>();
         for (int u : nums1) {

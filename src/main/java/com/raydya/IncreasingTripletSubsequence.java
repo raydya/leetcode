@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class IncreasingTripletSubsequence {
+
     public boolean increasingTriplet(int[] nums) {
         if (nums.length < 3) {
             return false;

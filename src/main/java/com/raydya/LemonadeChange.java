@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class LemonadeChange {
+
     public boolean lemonadeChange(int[] bills) {
         final int[] cash = new int[3];
 

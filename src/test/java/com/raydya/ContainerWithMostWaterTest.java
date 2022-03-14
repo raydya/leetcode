@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ContainerWithMostWaterTest {
+
     @Test
     public void test1() {
         final ContainerWithMostWater solution = new ContainerWithMostWater();

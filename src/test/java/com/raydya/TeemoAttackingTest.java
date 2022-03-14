@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TeemoAttackingTest {
+
     @Test
     public void test1() {
         final TeemoAttacking solution = new TeemoAttacking();

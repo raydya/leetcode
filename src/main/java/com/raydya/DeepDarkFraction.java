@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DeepDarkFraction {
+
     public int[] fraction(int[] cont) {
         int n = cont[cont.length - 1];
         int m = 1;

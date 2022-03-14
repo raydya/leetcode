@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NumberOfStepsToReduceANumberToZeroTest {
+
     @Test
     public void test1() {
         final NumberOfStepsToReduceANumberToZero solution = new NumberOfStepsToReduceANumberToZero();

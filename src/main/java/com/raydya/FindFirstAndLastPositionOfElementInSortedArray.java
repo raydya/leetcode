@@ -3,13 +3,16 @@ package com.raydya;
 import java.util.Arrays;
 
 public class FindFirstAndLastPositionOfElementInSortedArray {
+
     public int[] searchRange(int[] nums, int target) {
         return search(nums, target, 0);
     }
 
     private int[] search(int[] nums, int target, int offset) {
         final int length = nums.length;
-        if (length == 0) return new int[]{-1, -1};
+        if (length == 0) {
+            return new int[]{-1, -1};
+        }
         if (length == 1) {
             if (target != nums[0]) {
                 return new int[]{-1, -1};

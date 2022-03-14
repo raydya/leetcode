@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CheckIfAllTheIntegersInARangeAreCovered {
+
     public boolean isCovered(int[][] ranges, int left, int right) {
         boolean[] holder = new boolean[right - left + 1];
         for (int i = left; i <= right; i++) {
@@ -13,7 +14,9 @@ public class CheckIfAllTheIntegersInARangeAreCovered {
         }
 
         for (final boolean b : holder) {
-            if (!b) return false;
+            if (!b) {
+                return false;
+            }
         }
 
         return true;

@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class MostCommonWord {
+
     public String mostCommonWord(String paragraph, String[] banned) {
         paragraph = paragraph.toLowerCase();
         final String[] words = paragraph.split("[!?',;.\\s]");
@@ -17,7 +18,9 @@ public class MostCommonWord {
         String w = "";
         int max = 0;
         for (String word : words) {
-            if (word.isEmpty()) continue;
+            if (word.isEmpty()) {
+                continue;
+            }
             final int cnt = map.getOrDefault(word, 0) + 1;
             map.put(word, cnt);
             if (cnt > max && !ban.contains(word)) {

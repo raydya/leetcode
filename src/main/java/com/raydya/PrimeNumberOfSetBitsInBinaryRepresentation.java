@@ -1,11 +1,14 @@
 package com.raydya;
 
 public class PrimeNumberOfSetBitsInBinaryRepresentation {
+
     public int countPrimeSetBits(int left, int right) {
         int count = 0;
         for (int i = left; i <= right; i++) {
             final int c = numberOfOne(i);
-            if (isPrime(c)) count++;
+            if (isPrime(c)) {
+                count++;
+            }
         }
 
         return count;

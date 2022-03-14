@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UncommonFromSentencesTest {
+
     @Test
     public void test1() {
         final UncommonFromSentences solution = new UncommonFromSentences();
-        final String[] output = solution.uncommonFromSentences("this apple is sweet", "this apple is sour");
+        final String[] output = solution.uncommonFromSentences("this apple is sweet",
+            "this apple is sour");
 
         Assert.assertArrayEquals(new String[]{"sweet", "sour"}, output);
     }

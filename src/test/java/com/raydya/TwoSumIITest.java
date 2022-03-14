@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TwoSumIITest {
+
     @Test
     public void test1() {
         final TwoSumII solution = new TwoSumII();

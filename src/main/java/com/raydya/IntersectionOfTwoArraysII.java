@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class IntersectionOfTwoArraysII {
+
     public int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);

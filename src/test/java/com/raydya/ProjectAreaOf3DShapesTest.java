@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ProjectAreaOf3DShapesTest {
+
     @Test
     public void test1() {
         final ProjectAreaOf3DShapes solution = new ProjectAreaOf3DShapes();

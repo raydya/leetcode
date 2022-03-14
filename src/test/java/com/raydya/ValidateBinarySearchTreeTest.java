@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ValidateBinarySearchTreeTest {
+
     @Test
     public void test1() {
         final TreeNode right = new TreeNode(3);

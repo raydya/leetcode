@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Stack;
 
 public class BaseballGame {
+
     public int calPoints(String[] ops) {
         Stack<Integer> stack = new Stack<>();
         for (String op : ops) {

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LongestIncreasingSubsequenceTest {
+
     @Test
     public void test1() {
         final LongestIncreasingSubsequence solution = new LongestIncreasingSubsequence();

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class AddStrings {
+
     public String addStrings(String num1, String num2) {
         int carry = 0;
 
@@ -22,8 +23,9 @@ public class AddStrings {
             p2--;
         }
 
-
-        if (carry != 0) ret.append(carry);
+        if (carry != 0) {
+            ret.append(carry);
+        }
 
         return ret.reverse().toString();
     }

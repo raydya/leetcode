@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class BinaryGap {
+
     public int binaryGap(int n) {
         final String s = Integer.toBinaryString(n);
 

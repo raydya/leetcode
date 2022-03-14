@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Random;
 
 class RandomizedSet {
+
     private Map<Integer, Integer> dict;
     private List<Integer> list;
     private Random rand = new Random();
@@ -20,10 +21,13 @@ class RandomizedSet {
     }
 
     /**
-     * Inserts a value to the set. Returns true if the set did not already contain the specified element.
+     * Inserts a value to the set. Returns true if the set did not already contain the specified
+     * element.
      */
     public boolean insert(int val) {
-        if (dict.containsKey(val)) return false;
+        if (dict.containsKey(val)) {
+            return false;
+        }
 
         dict.put(val, list.size());
         list.add(list.size(), val);
@@ -34,7 +38,9 @@ class RandomizedSet {
      * Removes a value from the set. Returns true if the set contained the specified element.
      */
     public boolean remove(int val) {
-        if (!dict.containsKey(val)) return false;
+        if (!dict.containsKey(val)) {
+            return false;
+        }
 
         // move the last element to the place idx of the element to delete
         int lastElement = list.get(list.size() - 1);

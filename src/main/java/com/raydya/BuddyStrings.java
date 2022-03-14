@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class BuddyStrings {
+
     public boolean buddyStrings(String s, String goal) {
-        if (s.length() != goal.length()) return false;
+        if (s.length() != goal.length()) {
+            return false;
+        }
 
         int diffCnt = 0;
         final char[] chars = new char[4];
@@ -13,7 +16,9 @@ public class BuddyStrings {
             final char c2 = goal.charAt(i);
             if (c1 != c2) {
                 diffCnt++;
-                if (diffCnt > 2) return false;
+                if (diffCnt > 2) {
+                    return false;
+                }
                 chars[diffCnt - 1] = c1;
                 chars[diffCnt + 1] = c2;
             }
@@ -22,10 +27,13 @@ public class BuddyStrings {
                 final int k1 = c1 - 'a';
                 h1[k1]++;
 
-                if (h1[k1] > 1) dupChar = true;
+                if (h1[k1] > 1) {
+                    dupChar = true;
+                }
             }
         }
 
-        return (diffCnt == 2 && chars[0] == chars[3] && chars[1] == chars[2]) || (diffCnt == 0 && dupChar);
+        return (diffCnt == 2 && chars[0] == chars[3] && chars[1] == chars[2]) || (diffCnt == 0
+            && dupChar);
     }
 }

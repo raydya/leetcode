@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class RemoveDuplicatesFromSortedListII {
+
     public ListNode deleteDuplicates(ListNode head) {
         ListNode sentinel = new ListNode(0, head);
 

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BottleCostTest {
+
     @Test
     public void test1() {
         final BottleCost solution = new BottleCost();

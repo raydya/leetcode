@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ReverseOnlyLettersTest {
+
     @Test
     public void test1() {
         final ReverseOnlyLetters solution = new ReverseOnlyLetters();

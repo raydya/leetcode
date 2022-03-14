@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SumOfAllOddLengthSubarraysTest {
+
     @Test
     public void test1() {
         final SumOfAllOddLengthSubarrays solution = new SumOfAllOddLengthSubarrays();

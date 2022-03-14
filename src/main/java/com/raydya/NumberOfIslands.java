@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class NumberOfIslands {
+
     public int numIslands(char[][] grid) {
         final int r = grid.length;
         final int c = grid[0].length;
@@ -20,12 +21,19 @@ public class NumberOfIslands {
         return num;
     }
 
-    private void markBorderConnectedOne(boolean[][] visited, char[][] grid, int i, int j, int r, int c) {
-        if (i < 0 || i >= r) return;
-        if (j < 0 || j >= c) return;
+    private void markBorderConnectedOne(boolean[][] visited, char[][] grid, int i, int j, int r,
+        int c) {
+        if (i < 0 || i >= r) {
+            return;
+        }
+        if (j < 0 || j >= c) {
+            return;
+        }
 
         final char n = grid[i][j];
-        if (n == '0' || visited[i][j]) return;
+        if (n == '0' || visited[i][j]) {
+            return;
+        }
 
         visited[i][j] = true;
 

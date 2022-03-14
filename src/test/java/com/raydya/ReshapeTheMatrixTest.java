@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ReshapeTheMatrixTest {
+
     @Test
     public void test1() {
         final ReshapeTheMatrix solution = new ReshapeTheMatrix();

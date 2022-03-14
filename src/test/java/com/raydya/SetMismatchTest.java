@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SetMismatchTest {
+
     @Test
     public void test1() {
         final SetMismatch solution = new SetMismatch();

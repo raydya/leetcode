@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class ReverseLinkedList {
+
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode cursor = head;

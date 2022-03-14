@@ -42,7 +42,9 @@ public class PalindromeLinkedList {
         ListNode left = head;
 
         while (right != null) {
-            if (left.val != right.val) return false;
+            if (left.val != right.val) {
+                return false;
+            }
 
             right = right.next;
             left = left.next;

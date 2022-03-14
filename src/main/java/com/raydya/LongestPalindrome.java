@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class LongestPalindrome {
+
     public int longestPalindrome(String s) {
         final int[] h = new int[128];
 

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UIBDOeTest {
+
     @Test
     public void test1() {
         final UIBDOe solution = new UIBDOe();

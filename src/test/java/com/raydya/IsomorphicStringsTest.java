@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class IsomorphicStringsTest {
+
     @Test
     public void test1() {
         final IsomorphicStrings solution = new IsomorphicStrings();

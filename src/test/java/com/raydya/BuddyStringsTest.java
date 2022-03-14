@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BuddyStringsTest {
+
     @Test
     public void test1() {
         final BuddyStrings solution = new BuddyStrings();

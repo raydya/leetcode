@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Objects;
 
 public class BackspaceStringCompare {
+
     public boolean backspaceCompare(String s, String t) {
         final String ns = run(s);
         final String nt = run(t);

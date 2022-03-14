@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RankTransformOfAnArray {
+
     public int[] arrayRankTransform(int[] arr) {
         final int[] t = arr.clone();
         Arrays.sort(t);

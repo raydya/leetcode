@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ConvertIntegerToTheSumOfTwoNoZeroIntegersTest {
+
     @Test
     public void test1() {
         final ConvertIntegerToTheSumOfTwoNoZeroIntegers solution = new ConvertIntegerToTheSumOfTwoNoZeroIntegers();

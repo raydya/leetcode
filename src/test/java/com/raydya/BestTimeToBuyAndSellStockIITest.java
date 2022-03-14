@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BestTimeToBuyAndSellStockIITest {
+
     @Test
     public void test1() {
         final BestTimeToBuyAndSellStockII solution = new BestTimeToBuyAndSellStockII();

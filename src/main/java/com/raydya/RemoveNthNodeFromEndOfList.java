@@ -3,8 +3,11 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class RemoveNthNodeFromEndOfList {
+
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        if (head == null) return null;
+        if (head == null) {
+            return null;
+        }
 
         final ListNode reversedHead = reverseList(head);
 

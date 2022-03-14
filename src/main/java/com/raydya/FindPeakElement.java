@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindPeakElement {
+
     public int findPeakElement(int[] nums) {
         int maxValue = Integer.MIN_VALUE;
         int maxIndex = 0;
@@ -11,9 +12,13 @@ public class FindPeakElement {
                 maxValue = num;
                 maxIndex = i;
             }
-            if (i == 0 || i == l - 1) continue;
+            if (i == 0 || i == l - 1) {
+                continue;
+            }
 
-            if (num > nums[i - 1] && num > nums[i + 1]) return i;
+            if (num > nums[i - 1] && num > nums[i + 1]) {
+                return i;
+            }
         }
 
         return maxIndex;

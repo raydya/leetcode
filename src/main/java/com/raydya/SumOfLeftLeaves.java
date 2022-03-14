@@ -3,12 +3,15 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class SumOfLeftLeaves {
+
     public int sumOfLeftLeaves(TreeNode root) {
         return sum(root, 0);
     }
 
     public int sum(TreeNode node, int sum) {
-        if (node == null) return sum;
+        if (node == null) {
+            return sum;
+        }
         final TreeNode left = node.left;
         final TreeNode right = node.right;
         if (left != null && left.left == null && left.right == null) {

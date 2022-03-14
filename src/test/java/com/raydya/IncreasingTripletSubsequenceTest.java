@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class IncreasingTripletSubsequenceTest {
+
     @Test
     public void test1() {
         final IncreasingTripletSubsequence solution = new IncreasingTripletSubsequence();

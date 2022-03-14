@@ -5,8 +5,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class PascalsTriangleII {
+
     public List<Integer> getRow(Integer rowIndex) {
-        if (rowIndex == 0) return Collections.singletonList(1);
+        if (rowIndex == 0) {
+            return Collections.singletonList(1);
+        }
 
         final List<Integer> pre = getRow(rowIndex - 1);
 

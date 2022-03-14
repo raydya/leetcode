@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DailyTemperatures {
+
     public int[] dailyTemperatures(int[] T) {
         final int[] d = new int[T.length];
 

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ReverseInteger {
+
     public int reverse(int x) {
         long reversed = 0;
 

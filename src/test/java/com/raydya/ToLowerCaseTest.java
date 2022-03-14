@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ToLowerCaseTest {
+
     @Test
     public void test1() {
         final ToLowerCase solution = new ToLowerCase();

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ConstructTheRectangle {
+
     public int[] constructRectangle(int area) {
         final double sqrt = Math.sqrt(area);
         int l = (int) sqrt;

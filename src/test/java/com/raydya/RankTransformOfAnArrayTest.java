@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RankTransformOfAnArrayTest {
+
     @Test
     public void test1() {
         final RankTransformOfAnArray solution = new RankTransformOfAnArray();
@@ -23,7 +24,8 @@ public class RankTransformOfAnArrayTest {
     @Test
     public void test3() {
         final RankTransformOfAnArray solution = new RankTransformOfAnArray();
-        final int[] output = solution.arrayRankTransform(new int[]{37, 12, 28, 9, 100, 56, 80, 5, 12});
+        final int[] output = solution.arrayRankTransform(
+            new int[]{37, 12, 28, 9, 100, 56, 80, 5, 12});
 
         Assert.assertArrayEquals(new int[]{5, 3, 4, 2, 8, 6, 7, 1, 3}, output);
     }

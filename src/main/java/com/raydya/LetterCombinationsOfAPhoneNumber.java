@@ -6,8 +6,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class LetterCombinationsOfAPhoneNumber {
+
     public List<String> letterCombinations(String digits) {
-        if (digits.equals("")) return Collections.emptyList();
+        if (digits.equals("")) {
+            return Collections.emptyList();
+        }
 
         List<List<String>> holder = new ArrayList<>();
         for (int i = 0; i < digits.length(); i++) {
@@ -21,7 +24,8 @@ public class LetterCombinationsOfAPhoneNumber {
 
     private List<String> cartesianProduct(List<List<String>> lists) {
         int solutions = 1;
-        for (int i = 0; i < lists.size(); solutions *= lists.get(i).size(), i++) ;
+        for (int i = 0; i < lists.size(); solutions *= lists.get(i).size(), i++)
+            ;
         List<String> products = new ArrayList<>();
         for (int i = 0; i < solutions; i++) {
             int j = 1;

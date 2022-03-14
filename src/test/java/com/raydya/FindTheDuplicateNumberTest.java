@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindTheDuplicateNumberTest {
+
     @Test
     public void test1() {
         final FindTheDuplicateNumber solution = new FindTheDuplicateNumber();

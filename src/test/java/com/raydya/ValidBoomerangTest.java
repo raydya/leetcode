@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ValidBoomerangTest {
+
     @Test
     public void test1() {
         final ValidBoomerang solution = new ValidBoomerang();

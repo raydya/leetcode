@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class CousinsInBinaryTree {
+
     private TreeNode p1;
     private TreeNode p2;
     private int l1;
@@ -16,7 +17,9 @@ public class CousinsInBinaryTree {
     }
 
     private void iterator(TreeNode node, int x, int y, int level, TreeNode parent) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         if (node.val == x) {
             p1 = parent;

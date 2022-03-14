@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class HammingDistance {
+
     public int hammingDistance(int x, int y) {
         int i = x ^ y;
 

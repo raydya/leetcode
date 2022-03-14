@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindPeakElementTest {
+
     @Test
     public void test1() {
         final FindPeakElement solution = new FindPeakElement();

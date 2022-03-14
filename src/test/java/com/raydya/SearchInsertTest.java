@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SearchInsertTest {
+
     @Test
     public void test1() {
         final SearchInsert solution = new SearchInsert();

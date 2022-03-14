@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class BaseSeven {
+
     public String convertToBase7(int num) {
         int quotient = num / 7;
         int remainder = num % 7;

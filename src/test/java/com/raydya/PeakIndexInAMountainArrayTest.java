@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PeakIndexInAMountainArrayTest {
+
     @Test
     public void test1() {
         final PeakIndexInAMountainArray solution = new PeakIndexInAMountainArray();
@@ -39,7 +40,8 @@ public class PeakIndexInAMountainArrayTest {
     @Test
     public void test5() {
         final PeakIndexInAMountainArray solution = new PeakIndexInAMountainArray();
-        final int output = solution.peakIndexInMountainArray(new int[]{24, 69, 100, 99, 79, 78, 67, 36, 26, 19});
+        final int output = solution.peakIndexInMountainArray(
+            new int[]{24, 69, 100, 99, 79, 78, 67, 36, 26, 19});
 
         Assert.assertEquals(2, output);
     }
@@ -47,7 +49,8 @@ public class PeakIndexInAMountainArrayTest {
     @Test
     public void test6() {
         final PeakIndexInAMountainArray solution = new PeakIndexInAMountainArray();
-        final int output = solution.peakIndexInMountainArray(new int[]{18, 29, 38, 59, 98, 100, 99, 98, 90});
+        final int output = solution.peakIndexInMountainArray(
+            new int[]{18, 29, 38, 59, 98, 100, 99, 98, 90});
 
         Assert.assertEquals(5, output);
     }

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ImplementStackUsingQueues {
+
     @Test
     public void test1() {
         final MyStack stack = new MyStack();

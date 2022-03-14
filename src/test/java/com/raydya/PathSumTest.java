@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PathSumTest {
+
     @Test
     public void test1() {
         final TreeNode n8 = new TreeNode(1);

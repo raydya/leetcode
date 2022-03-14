@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DecodeWaysTest {
+
     @Test
     public void test1() {
         final DecodeWays solution = new DecodeWays();

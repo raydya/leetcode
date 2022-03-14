@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ProductOfArrayExceptSelf {
+
     public int[] productExceptSelf(int[] nums) {
         int length = nums.length;
         int[] answer = new int[length];

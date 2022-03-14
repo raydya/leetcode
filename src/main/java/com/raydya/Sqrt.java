@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class Sqrt {
+
     public int sqrt(int x) {
         if (x < 2) {
             return x;

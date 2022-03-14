@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DistributeCandiesToPeopleTest {
+
     @Test
     public void test1() {
         final DistributeCandiesToPeople solution = new DistributeCandiesToPeople();

@@ -1,11 +1,11 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class FindAllAnagramsInAStringTest {
+
     @Test
     public void test1() {
         final FindAllAnagramsInAString solution = new FindAllAnagramsInAString();

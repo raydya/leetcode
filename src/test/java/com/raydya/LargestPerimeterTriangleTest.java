@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LargestPerimeterTriangleTest {
+
     @Test
     public void test1() {
         final LargestPerimeterTriangle solution = new LargestPerimeterTriangle();

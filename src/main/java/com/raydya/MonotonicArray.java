@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MonotonicArray {
+
     public boolean isMonotonic(int[] nums) {
         int trend = 0;
 

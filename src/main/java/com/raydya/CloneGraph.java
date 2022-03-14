@@ -1,15 +1,17 @@
 package com.raydya;
 
 import com.raydya.data.type.GraphNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class CloneGraph {
+
     private Map<Integer, GraphNode> map = new HashMap<>();
 
     public GraphNode cloneGraph(GraphNode node) {
-        if (node == null) return null;
+        if (node == null) {
+            return null;
+        }
 
         if (map.containsKey(node.val)) {
             return map.get(node.val);

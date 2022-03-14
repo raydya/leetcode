@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class LongestSubstringWithAtLeastKRepeatingCharacters {
+
     public int longestSubstring(String s, int k) {
         int ans = 0;
         int n = s.length();
@@ -15,20 +16,30 @@ public class LongestSubstringWithAtLeastKRepeatingCharacters {
                 int u = cs[i] - 'a';
                 cnt[u]++;
                 // 如果添加到 cnt 之后为 1，说明字符总数 +1
-                if (cnt[u] == 1) tot++;
+                if (cnt[u] == 1) {
+                    tot++;
+                }
                 // 如果添加到 cnt 之后等于 k，说明该字符从不达标变为达标，达标数量 + 1
-                if (cnt[u] == k) sum++;
+                if (cnt[u] == k) {
+                    sum++;
+                }
                 // 当区间所包含的字符种类数量 tot 超过了当前限定的数量 p，那么我们要删除掉一些字母，即「左指针」右移
                 while (tot > p) {
                     int t = cs[j++] - 'a';
                     cnt[t]--;
                     // 如果添加到 cnt 之后为 0，说明字符总数-1
-                    if (cnt[t] == 0) tot--;
+                    if (cnt[t] == 0) {
+                        tot--;
+                    }
                     // 如果添加到 cnt 之后等于 k - 1，说明该字符从达标变为不达标，达标数量 - 1
-                    if (cnt[t] == k - 1) sum--;
+                    if (cnt[t] == k - 1) {
+                        sum--;
+                    }
                 }
                 // 当所有字符都符合要求，更新答案
-                if (tot == sum) ans = Math.max(ans, i - j + 1);
+                if (tot == sum) {
+                    ans = Math.max(ans, i - j + 1);
+                }
             }
         }
         return ans;

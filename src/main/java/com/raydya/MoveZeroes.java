@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MoveZeroes {
+
     public void moveZeroes(int[] nums) {
         int lastZeroIndex = 0;
 

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UniquePathsTest {
+
     @Test
     public void test1() {
         final UniquePaths solution = new UniquePaths();

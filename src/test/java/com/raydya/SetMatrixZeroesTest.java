@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SetMatrixZeroesTest {
+
     @Test
     public void test1() {
         final int[][] input = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};

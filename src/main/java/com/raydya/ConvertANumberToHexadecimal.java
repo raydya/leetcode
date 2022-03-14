@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ConvertANumberToHexadecimal {
+
     private static final String[] HEX_TABLE = new String[]{
         "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"
     };
@@ -32,7 +33,9 @@ public class ConvertANumberToHexadecimal {
     }
 
     private int charToInt(char c, int p) {
-        if (c == '0') return 0;
+        if (c == '0') {
+            return 0;
+        }
         return (int) Math.pow(2, p);
     }
 }

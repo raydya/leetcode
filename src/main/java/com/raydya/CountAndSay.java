@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class CountAndSay {
+
     public String countAndSay(int n) {
-        if (n == 1) return "1";
+        if (n == 1) {
+            return "1";
+        }
 
         final String lastTerm = countAndSay(n - 1);
 
@@ -21,7 +24,9 @@ public class CountAndSay {
         for (int i = 0; i < term.length(); i++) {
             final char charAt = term.charAt(i);
 
-            if (cs == 'C') cs = charAt;
+            if (cs == 'C') {
+                cs = charAt;
+            }
 
             if (charAt == cs) {
                 cnt++;

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LongestHarmoniousSubsequence {
+
     public int findLHS(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
 

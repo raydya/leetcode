@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MinimumPathSum {
+
     public int minPathSum(int[][] grid) {
         //init the first row
         for (int i = 1; i < grid[0].length; i++) {

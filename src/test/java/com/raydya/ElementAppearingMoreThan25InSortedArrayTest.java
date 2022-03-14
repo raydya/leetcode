@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ElementAppearingMoreThan25InSortedArrayTest {
+
     @Test
     public void test1() {
         final ElementAppearingMoreThan25InSortedArray solution = new ElementAppearingMoreThan25InSortedArray();
@@ -23,7 +24,8 @@ public class ElementAppearingMoreThan25InSortedArrayTest {
     @Test
     public void test3() {
         final ElementAppearingMoreThan25InSortedArray solution = new ElementAppearingMoreThan25InSortedArray();
-        final int output = solution.findSpecialInteger(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12});
+        final int output = solution.findSpecialInteger(
+            new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12});
 
         Assert.assertEquals(12, output);
     }

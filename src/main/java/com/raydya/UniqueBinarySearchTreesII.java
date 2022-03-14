@@ -1,14 +1,16 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 public class UniqueBinarySearchTreesII {
+
     public List<TreeNode> generateTrees(int n) {
-        if (n == 0) return Collections.emptyList();
+        if (n == 0) {
+            return Collections.emptyList();
+        }
         return generateSubtrees(1, n);
     }
 

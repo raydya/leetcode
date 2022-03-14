@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CountOddNumbersInAnIntervalRange {
+
     public int countOdds(int low, int high) {
         final int k = high - low + 1;
         if (k % 2 == 0) {

@@ -24,7 +24,8 @@ public class ContainsDuplicateTest {
     @Test
     public void test3() {
         final ContainsDuplicate solution = new ContainsDuplicate();
-        final boolean containsDuplicate = solution.containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2});
+        final boolean containsDuplicate = solution.containsDuplicate(
+            new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2});
 
         Assert.assertTrue(containsDuplicate);
     }

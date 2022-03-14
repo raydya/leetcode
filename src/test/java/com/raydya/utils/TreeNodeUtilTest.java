@@ -1,16 +1,17 @@
 package com.raydya.utils;
 
 import com.raydya.data.type.TreeNode;
+import java.util.Arrays;
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class TreeNodeUtilTest {
+
     @Test
     public void test1() {
-        List<Integer> vals = Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, 5, 1);
+        List<Integer> vals = Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null,
+            5, 1);
         final TreeNode root = TreeNodeUtil.build(vals);
 
         Assert.assertEquals(5, root.val);

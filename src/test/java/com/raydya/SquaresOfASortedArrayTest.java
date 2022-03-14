@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SquaresOfASortedArrayTest {
+
     @Test
     public void test1() {
         final SquaresOfASortedArray solution = new SquaresOfASortedArray();

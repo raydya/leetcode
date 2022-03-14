@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NextGreaterElementITest {
+
     @Test
     public void test1() {
         final NextGreaterElementI solution = new NextGreaterElementI();

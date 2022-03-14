@@ -3,7 +3,9 @@ package com.raydya;
 public class ClimbingStairs {
 
     public int climbStairs(int n) {
-        if (n == 1) return 1;
+        if (n == 1) {
+            return 1;
+        }
 
         final int[] ints = new int[n + 1];
         ints[1] = 1;

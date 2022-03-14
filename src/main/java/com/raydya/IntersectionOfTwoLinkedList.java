@@ -27,9 +27,13 @@ public class IntersectionOfTwoLinkedList {
 //    }
 
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if (headA == headB) return headA;
+        if (headA == headB) {
+            return headA;
+        }
 
-        if (headA == null || headB == null) return null;
+        if (headA == null || headB == null) {
+            return null;
+        }
 
         ListNode tmpA = headA;
         ListNode tmpB = headB;
@@ -37,17 +41,23 @@ public class IntersectionOfTwoLinkedList {
         ListNode lB = null;
 
         do {
-            if (tmpA == tmpB) return tmpA;
+            if (tmpA == tmpB) {
+                return tmpA;
+            }
 
             if (tmpA.next == null) {
-                if (lA == null) lA = tmpA;
+                if (lA == null) {
+                    lA = tmpA;
+                }
                 tmpA = headB;
             } else {
                 tmpA = tmpA.next;
             }
 
             if (tmpB.next == null) {
-                if (lB == null) lB = tmpB;
+                if (lB == null) {
+                    lB = tmpB;
+                }
                 tmpB = headA;
             } else {
                 tmpB = tmpB.next;

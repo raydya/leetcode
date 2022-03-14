@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindNumbersWithEvenNumberOfDigits {
+
     public int findNumbers(int[] nums) {
         int ret = 0;
 
@@ -11,7 +12,9 @@ public class FindNumbersWithEvenNumberOfDigits {
                 d++;
                 num = num / 10;
             }
-            if (d % 2 == 0) ret++;
+            if (d % 2 == 0) {
+                ret++;
+            }
         }
 
         return ret;

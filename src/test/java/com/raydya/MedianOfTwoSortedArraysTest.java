@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MedianOfTwoSortedArraysTest {
+
     @Test
     public void test1() {
         final MedianOfTwoSortedArrays solution = new MedianOfTwoSortedArrays();

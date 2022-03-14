@@ -1,13 +1,13 @@
 package com.raydya;
 
 import com.raydya.data.type.Node;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class PopulatingNextRightPointersInEachNodeII {
+
     public Node connect(Node root) {
         final Map<Integer, List<Node>> nodeMap = new HashMap<>();
         generate(root, 0, nodeMap);
@@ -24,7 +24,9 @@ public class PopulatingNextRightPointersInEachNodeII {
     }
 
     private void generate(Node node, int level, Map<Integer, List<Node>> nodeMap) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
         final List<Node> nodes = nodeMap.getOrDefault(level, new ArrayList<>());
         nodes.add(node);
         nodeMap.put(level, nodes);

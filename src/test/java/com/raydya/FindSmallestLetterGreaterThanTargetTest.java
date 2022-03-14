@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindSmallestLetterGreaterThanTargetTest {
+
     @Test
     public void test1() {
         final FindSmallestLetterGreaterThanTarget solution = new FindSmallestLetterGreaterThanTarget();

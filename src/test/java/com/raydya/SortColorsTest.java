@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SortColorsTest {
+
     @Test
     public void test1() {
         final int[] colors = {2, 0, 2, 1, 1, 0};

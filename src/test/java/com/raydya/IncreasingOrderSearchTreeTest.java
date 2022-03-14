@@ -2,15 +2,16 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class IncreasingOrderSearchTreeTest {
+
     @Test
     public void test1() {
-        final TreeNode root = TreeNodeUtil.build(Arrays.asList(5, 3, 6, 2, 4, null, 8, 1, null, null, null, null, null, 7, 9));
+        final TreeNode root = TreeNodeUtil.build(
+            Arrays.asList(5, 3, 6, 2, 4, null, 8, 1, null, null, null, null, null, 7, 9));
 
         final IncreasingOrderSearchTree solution = new IncreasingOrderSearchTree();
         final TreeNode output = solution.increasingBST(root);

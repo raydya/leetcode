@@ -12,7 +12,9 @@ public class MaxSubArray {
             final int num = nums[i];
             current = Math.max(num, current + num);
 
-            if (current > max) max = current;
+            if (current > max) {
+                max = current;
+            }
         }
 
         return max;

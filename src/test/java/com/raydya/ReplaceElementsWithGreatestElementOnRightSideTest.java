@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ReplaceElementsWithGreatestElementOnRightSideTest {
+
     @Test
     public void test1() {
         final ReplaceElementsWithGreatestElementOnRightSide solution = new ReplaceElementsWithGreatestElementOnRightSide();

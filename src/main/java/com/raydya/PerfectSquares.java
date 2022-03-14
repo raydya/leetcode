@@ -1,10 +1,10 @@
 package com.raydya;
 
 /**
- * 数学解
- * 拉格朗日四平方定理
+ * 数学解 拉格朗日四平方定理
  */
 public class PerfectSquares {
+
     protected boolean isSquare(int n) {
         int sq = (int) Math.sqrt(n);
         return n == sq * sq;
@@ -12,17 +12,21 @@ public class PerfectSquares {
 
     public int numSquares(int n) {
         // four-square and three-square theorems.
-        while (n % 4 == 0)
+        while (n % 4 == 0) {
             n /= 4;
-        if (n % 8 == 7)
+        }
+        if (n % 8 == 7) {
             return 4;
+        }
 
-        if (this.isSquare(n))
+        if (this.isSquare(n)) {
             return 1;
+        }
         // enumeration to check if the number can be decomposed into sum of two squares.
         for (int i = 1; i * i <= n; ++i) {
-            if (this.isSquare(n - i * i))
+            if (this.isSquare(n - i * i)) {
                 return 2;
+            }
         }
         // bottom case of three-square theorem.
         return 3;

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class HappyNumber {
+
     public boolean isHappy(int n) {
         int res = n;
         while (res != 1 && res != 4) {

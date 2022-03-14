@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HammingDistanceTest {
+
     @Test
     public void test1() {
         final HammingDistance solution = new HammingDistance();

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 public class ThreeSum {
+
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
 
@@ -14,7 +15,9 @@ public class ThreeSum {
         for (int i = 0; i < nums.length; i++) {
             final int x = nums[i];
 
-            if (i > 0 && x == nums[i - 1]) continue; // skip duplicate elements
+            if (i > 0 && x == nums[i - 1]) {
+                continue; // skip duplicate elements
+            }
 
             int p1 = i + 1;
             int p2 = nums.length - 1;

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GetMaximumInGeneratedArrayTest {
+
     @Test
     public void test1() {
         final GetMaximumInGeneratedArray solution = new GetMaximumInGeneratedArray();

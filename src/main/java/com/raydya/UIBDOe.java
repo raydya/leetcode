@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class UIBDOe {
+
     public int minimumOperations(String leaves) {
         int n = leaves.length();
         int g = leaves.charAt(0) == 'y' ? 1 : -1;

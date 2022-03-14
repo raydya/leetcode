@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UniqueEmailAddressTest {
+
     @Test
     public void test1() {
         final UniqueEmailAddress solution = new UniqueEmailAddress();

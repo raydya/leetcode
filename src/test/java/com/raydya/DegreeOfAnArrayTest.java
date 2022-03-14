@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DegreeOfAnArrayTest {
+
     @Test
     public void test1() {
         final DegreeOfAnArray solution = new DegreeOfAnArray();

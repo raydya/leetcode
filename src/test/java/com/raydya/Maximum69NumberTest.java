@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class Maximum69NumberTest {
+
     @Test
     public void test1() {
         final Maximum69Number solution = new Maximum69Number();

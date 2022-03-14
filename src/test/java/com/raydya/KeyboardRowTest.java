@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class KeyboardRowTest {
+
     @Test
     public void test1() {
         final KeyboardRow solution = new KeyboardRow();

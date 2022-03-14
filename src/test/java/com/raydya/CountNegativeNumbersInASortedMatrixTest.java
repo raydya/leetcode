@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CountNegativeNumbersInASortedMatrixTest {
+
     @Test
     public void test1() {
         final CountNegativeNumbersInASortedMatrix solution = new CountNegativeNumbersInASortedMatrix();
-        final int output = solution.countNegatives(new int[][]{{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}});
+        final int output = solution.countNegatives(
+            new int[][]{{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}});
 
         Assert.assertEquals(8, output);
     }

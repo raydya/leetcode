@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaximizeSumOfArrayAfterKNegationsTest {
+
     @Test
     public void test1() {
         final MaximizeSumOfArrayAfterKNegations solution = new MaximizeSumOfArrayAfterKNegations();
@@ -56,7 +57,8 @@ public class MaximizeSumOfArrayAfterKNegationsTest {
     @Test
     public void test7() {
         final MaximizeSumOfArrayAfterKNegations solution = new MaximizeSumOfArrayAfterKNegations();
-        final int output = solution.largestSumAfterKNegations(new int[]{8, -7, -3, -9, 1, 9, -6, -9, 3}, 8);
+        final int output = solution.largestSumAfterKNegations(
+            new int[]{8, -7, -3, -9, 1, 9, -6, -9, 3}, 8);
 
         Assert.assertEquals(53, output);
     }

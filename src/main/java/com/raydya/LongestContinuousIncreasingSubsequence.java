@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class LongestContinuousIncreasingSubsequence {
+
     public int findLengthOfLCIS(int[] nums) {
         int pre = nums[0];
         int cnt = 1;

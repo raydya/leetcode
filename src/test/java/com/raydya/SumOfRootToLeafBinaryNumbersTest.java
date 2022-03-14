@@ -2,13 +2,13 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
+import java.util.Collections;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class SumOfRootToLeafBinaryNumbersTest {
+
     @Test
     public void test1() {
         final TreeNode root = TreeNodeUtil.build(Arrays.asList(1, 0, 1, 0, 1, 0, 1));

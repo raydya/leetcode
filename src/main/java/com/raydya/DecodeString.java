@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.LinkedList;
 
 public class DecodeString {
+
     public String decodeString(String s) {
         String res = "";
         int multi = 0;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz {
+
     public List<String> fizzBuzz(int n) {
         final ArrayList<String> list = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
@@ -11,9 +12,9 @@ public class FizzBuzz {
             final int r5 = i % 5;
             if (r3 == 0 && r5 == 0) {
                 list.add("FizzBuzz");
-            } else if(r5 == 0) {
+            } else if (r5 == 0) {
                 list.add("Buzz");
-            } else if(r3 == 0) {
+            } else if (r3 == 0) {
                 list.add("Fizz");
             } else {
                 list.add(String.valueOf(i));

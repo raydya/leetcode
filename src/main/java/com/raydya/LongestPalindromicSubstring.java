@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class LongestPalindromicSubstring {
+
     public String longestPalindrome(String s) {
-        if (s == null || s.length() < 1) return "";
+        if (s == null || s.length() < 1) {
+            return "";
+        }
         int start = 0;
         int end = 0;
         for (int i = 0; i < s.length(); i++) {

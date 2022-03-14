@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MergeTwoSortedListTest {
+
     @Test
     public void test1() {
         final ListNode a3 = new ListNode(4);

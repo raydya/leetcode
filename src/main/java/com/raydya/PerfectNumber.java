@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class PerfectNumber {
+
     public boolean checkPerfectNumber(int num) {
-        if (num == 1) return false;
+        if (num == 1) {
+            return false;
+        }
         int s = 2;
         int e = num / 2;
         int sum = 1;

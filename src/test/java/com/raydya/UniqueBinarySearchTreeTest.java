@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UniqueBinarySearchTreeTest {
+
     @Test
     public void test1() {
         final UniqueBinarySearchTrees solution = new UniqueBinarySearchTrees();

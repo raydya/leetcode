@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CountOfMatchesInTournament {
+
     public int numberOfMatches(int n) {
         int t = 0;
 

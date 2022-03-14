@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ClumsyFactorialTest {
+
     @Test
     public void test1() {
         final ClumsyFactorial solution = new ClumsyFactorial();

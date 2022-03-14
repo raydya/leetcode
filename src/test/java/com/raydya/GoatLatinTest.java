@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GoatLatinTest {
+
     @Test
     public void test1() {
         final GoatLatin solution = new GoatLatin();
@@ -17,6 +18,8 @@ public class GoatLatinTest {
         final GoatLatin solution = new GoatLatin();
         final String output = solution.toGoatLatin("The quick brown fox jumped over the lazy dog");
 
-        Assert.assertEquals("heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa", output);
+        Assert.assertEquals(
+            "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa",
+            output);
     }
 }

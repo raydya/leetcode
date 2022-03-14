@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class CheckIfItIsAStraightLine {
+
     public boolean checkStraightLine(int[][] coordinates) {
-        if (coordinates.length == 2) return true;
+        if (coordinates.length == 2) {
+            return true;
+        }
         for (int i = 0; i < coordinates.length - 2; i++) {
             if (!isLine(coordinates[i], coordinates[i + 1], coordinates[i + 2])) {
                 return false;

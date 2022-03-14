@@ -27,7 +27,9 @@ public class TwoSumII {
 
         while (p1 < p2) {
             final int sum = numbers[p1] + numbers[p2];
-            if (sum == target) return new int[]{p1 + 1, p2 + 1};
+            if (sum == target) {
+                return new int[]{p1 + 1, p2 + 1};
+            }
 
             if (sum > target) {
                 p2--;

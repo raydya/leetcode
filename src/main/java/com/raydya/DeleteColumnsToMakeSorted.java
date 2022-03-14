@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DeleteColumnsToMakeSorted {
+
     public int minDeletionSize(String[] strs) {
         final int l = strs[0].length();
 

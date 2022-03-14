@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class ProjectAreaOf3DShapes {
+
     public int projectionArea(int[][] grid) {
         int xy = 0;
         int yz = 0;
@@ -12,7 +13,9 @@ public class ProjectAreaOf3DShapes {
         for (final int[] ints : grid) {
             int maxYz = 0;
             for (int j = 0; j < ints.length; j++) {
-                if (ints[j] == 0) continue;
+                if (ints[j] == 0) {
+                    continue;
+                }
                 xy++;
                 maxYz = Math.max(ints[j], maxYz);
                 k[j] = Math.max(ints[j], k[j]);

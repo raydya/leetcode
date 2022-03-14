@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class VerifyingAnAlienDictionaryTest {
+
     @Test
     public void test1() {
         final VerifyingAnAlienDictionary solution = new VerifyingAnAlienDictionary();
-        final boolean output = solution.isAlienSorted(new String[]{"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz");
+        final boolean output = solution.isAlienSorted(new String[]{"hello", "leetcode"},
+            "hlabcdefgijkmnopqrstuvwxyz");
 
         Assert.assertTrue(output);
     }
@@ -15,7 +17,8 @@ public class VerifyingAnAlienDictionaryTest {
     @Test
     public void test2() {
         final VerifyingAnAlienDictionary solution = new VerifyingAnAlienDictionary();
-        final boolean output = solution.isAlienSorted(new String[]{"word", "world", "row"}, "worldabcefghijkmnpqstuvxyz");
+        final boolean output = solution.isAlienSorted(new String[]{"word", "world", "row"},
+            "worldabcefghijkmnpqstuvxyz");
 
         Assert.assertFalse(output);
     }
@@ -23,7 +26,8 @@ public class VerifyingAnAlienDictionaryTest {
     @Test
     public void test3() {
         final VerifyingAnAlienDictionary solution = new VerifyingAnAlienDictionary();
-        final boolean output = solution.isAlienSorted(new String[]{"apple", "app"}, "abcdefghijklmnopqrstuvwxyz");
+        final boolean output = solution.isAlienSorted(new String[]{"apple", "app"},
+            "abcdefghijklmnopqrstuvwxyz");
 
         Assert.assertFalse(output);
     }

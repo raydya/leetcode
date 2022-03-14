@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 public class SubsetsII {
+
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         int n = nums.length;
         Arrays.sort(nums);
@@ -17,7 +18,8 @@ public class SubsetsII {
         return new ArrayList<>(output);
     }
 
-    private void backtrack(int first, ArrayList<Integer> curr, int[] nums, int n, int k, Set<List<Integer>> output) {
+    private void backtrack(int first, ArrayList<Integer> curr, int[] nums, int n, int k,
+        Set<List<Integer>> output) {
         // if the combination is done
         if (curr.size() == k) {
             output.add(new ArrayList<>(curr));

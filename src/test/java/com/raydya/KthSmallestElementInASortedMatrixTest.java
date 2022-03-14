@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class KthSmallestElementInASortedMatrixTest {
+
     @Test
     public void test1() {
         final int[][] matrix = {new int[]{1, 5, 9}, new int[]{10, 11, 13}, new int[]{12, 13, 15}};

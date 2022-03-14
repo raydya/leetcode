@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LengthOfLastWordTest {
+
     @Test
     public void test1() {
         final String input = "Hello World";

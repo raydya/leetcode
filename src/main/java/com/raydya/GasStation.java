@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class GasStation {
+
     public int canComplete(int[] gas, int[] cost) {
         int currentGaining = 0;
         int totalGaining = 0;

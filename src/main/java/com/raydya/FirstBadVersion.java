@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.VersionControl;
 
 public class FirstBadVersion extends VersionControl {
+
     public int firstBadVersion(int n) {
         int left = 1;
         int right = n;

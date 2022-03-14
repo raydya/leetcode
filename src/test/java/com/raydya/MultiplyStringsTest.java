@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MultiplyStringsTest {
+
     @Test
     public void test1() {
         final MultiplyStrings solution = new MultiplyStrings();

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RelativeRanks {
+
     public String[] findRelativeRanks(int[] score) {
         final int[] clone = score.clone();
         Arrays.sort(clone);

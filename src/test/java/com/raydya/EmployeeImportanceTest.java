@@ -1,20 +1,19 @@
 package com.raydya;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class EmployeeImportanceTest {
+
     @Test
     public void test1() {
         final EmployeeImportance.Employee e1 = new EmployeeImportance.Employee();
         e1.id = 1;
         e1.importance = 5;
         e1.subordinates = Arrays.asList(2, 3);
-
 
         final EmployeeImportance.Employee e2 = new EmployeeImportance.Employee();
         e2.id = 2;
@@ -40,7 +39,6 @@ public class EmployeeImportanceTest {
         e1.id = 1;
         e1.importance = 5;
         e1.subordinates = Arrays.asList(2, 3);
-
 
         final EmployeeImportance.Employee e2 = new EmployeeImportance.Employee();
         e2.id = 2;

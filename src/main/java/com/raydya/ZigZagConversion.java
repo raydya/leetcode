@@ -21,7 +21,9 @@ public class ZigZagConversion {
 //    }
 
     public String convert(String s, int numRows) {
-        if (numRows == 1) return s;
+        if (numRows == 1) {
+            return s;
+        }
 
         StringBuilder ret = new StringBuilder();
         final int n = s.length();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RansomNoteTest {
+
     @Test
     public void test1() {
         final RansomNote solution = new RansomNote();

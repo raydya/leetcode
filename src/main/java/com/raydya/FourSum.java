@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 public class FourSum {
+
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
 
@@ -15,10 +16,14 @@ public class FourSum {
         for (int i = 0; i < nums.length; i++) {
             final int x = nums[i];
 
-            if (i > 0 && x == nums[i - 1]) continue; // skip duplicate elements
+            if (i > 0 && x == nums[i - 1]) {
+                continue; // skip duplicate elements
+            }
 
             for (int j = 0; j < nums.length; j++) {
-                if (i == j) continue;
+                if (i == j) {
+                    continue;
+                }
 
                 final int y = nums[j];
 

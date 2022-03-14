@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class GoalParserInterpretation {
+
     public String interpret(String command) {
         StringBuilder b = new StringBuilder();
         int i = 0;

@@ -2,13 +2,13 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
+import java.util.Collections;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class SubtreeOfAnotherTreeTest {
+
     @Test
     public void test1() {
         final TreeNode root = TreeNodeUtil.build(Arrays.asList(3, 4, 5, 1, 2));
@@ -22,7 +22,8 @@ public class SubtreeOfAnotherTreeTest {
 
     @Test
     public void test2() {
-        final TreeNode root = TreeNodeUtil.build(Arrays.asList(3, 4, 5, 1, 2, null, null, null, null, 0));
+        final TreeNode root = TreeNodeUtil.build(
+            Arrays.asList(3, 4, 5, 1, 2, null, null, null, null, 0));
         final TreeNode subRoot = TreeNodeUtil.build(Arrays.asList(4, 1, 2));
 
         final SubtreeOfAnotherTree solution = new SubtreeOfAnotherTree();

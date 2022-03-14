@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ZigZagConversionTest {
+
     @Test
     public void test1() {
         final ZigZagConversion solution = new ZigZagConversion();

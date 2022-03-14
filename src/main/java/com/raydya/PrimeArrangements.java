@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class PrimeArrangements {
+
     public int numPrimeArrangements(int n) {
         final int k = countPrimes(n);
         long ret = 1;
@@ -20,7 +21,9 @@ public class PrimeArrangements {
     }
 
     private int countPrimes(int n) {
-        if (n <= 1) return 0;
+        if (n <= 1) {
+            return 0;
+        }
 
         final boolean[] table = new boolean[n + 1];
         Arrays.fill(table, true);

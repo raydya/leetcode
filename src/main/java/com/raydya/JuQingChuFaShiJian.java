@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class JuQingChuFaShiJian {
+
     public int[] getTriggerTime(int[][] increase, int[][] requirements) {
         final int l = increase.length;
         //1. 累加属性值，形成一个玩家每天属性值的数组
@@ -27,14 +28,16 @@ public class JuQingChuFaShiJian {
 
                 while (left <= right) {
                     int middle = left + (right - left) / 2;
-                    if (increase[middle][0] < req[0] || increase[middle][1] < req[1] || increase[middle][2] < req[2]) {
+                    if (increase[middle][0] < req[0] || increase[middle][1] < req[1]
+                        || increase[middle][2] < req[2]) {
                         left = middle + 1;
                     } else {
                         right = middle - 1;
                     }
                 }
 
-                if (left < l && increase[left][0] >= req[0] && increase[left][1] >= req[1] && increase[left][2] >= req[2]) {
+                if (left < l && increase[left][0] >= req[0] && increase[left][1] >= req[1]
+                    && increase[left][2] >= req[2]) {
                     output[i] = left + 1;
                 }
             }

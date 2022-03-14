@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class RelativeSortArray {
+
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
         Map<Integer, Integer> wMap = new HashMap<>();
 

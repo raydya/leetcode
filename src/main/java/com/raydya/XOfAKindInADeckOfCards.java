@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class XOfAKindInADeckOfCards {
+
     public boolean hasGroupsSizeX(int[] deck) {
         int[] count = new int[10000];
         for (final int i : deck) {

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class XiaoZhangShuaTiJiHuaTest {
+
     @Test
     public void test1() {
         final XiaoZhangShuaTiJiHua solution = new XiaoZhangShuaTiJiHua();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NumberOfSegmentsInAStringTest {
+
     @Test
     public void test1() {
         final NumberOfSegmentsInAString solution = new NumberOfSegmentsInAString();

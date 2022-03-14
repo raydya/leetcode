@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class SortList {
+
     public ListNode sortList(ListNode head) {
         if (head == null) {
             return null;

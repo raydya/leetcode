@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ValidPalindromeII {
+
     public boolean validPalindrome(String s) {
         if (s.isEmpty()) {
             return true;
@@ -24,7 +25,9 @@ public class ValidPalindromeII {
             j--;
         }
 
-        if (valid) return true;
+        if (valid) {
+            return true;
+        }
 
         final String s1 = s.substring(i + 1, j + 1);
         final String s2 = s.substring(i, j);

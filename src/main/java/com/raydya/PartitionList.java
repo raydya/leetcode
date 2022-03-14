@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class PartitionList {
+
     public ListNode partition(ListNode head, int x) {
         ListNode sentinel1 = new ListNode(0, head);
         ListNode predecessor1 = sentinel1;

@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class KthSmallestElementInASortedMatrix {
+
     public int kthSmallest(int[][] matrix, int k) {
         final int m = matrix.length;
         final int n = matrix[0].length;

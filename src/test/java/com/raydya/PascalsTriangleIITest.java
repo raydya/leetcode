@@ -1,13 +1,13 @@
 package com.raydya;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class PascalsTriangleIITest {
+
     @Test
     public void test1() {
         final PascalsTriangleII solution = new PascalsTriangleII();

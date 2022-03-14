@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DeleteColumnsToMakeSortedTest {
+
     @Test
     public void test1() {
         final DeleteColumnsToMakeSorted solution = new DeleteColumnsToMakeSorted();

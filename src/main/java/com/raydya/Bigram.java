@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class Bigram {
+
     public String[] findOcurrences(String text, String first, String second) {
         List<String> ret = new ArrayList<>();
         final String[] s = text.split(" ");

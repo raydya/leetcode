@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SimplifyPathTest {
+
     @Test
     public void test1() {
         final SimplifyPath solution = new SimplifyPath();

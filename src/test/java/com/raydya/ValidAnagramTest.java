@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ValidAnagramTest {
+
     @Test
     public void test1() {
         final ValidAnagram solution = new ValidAnagram();

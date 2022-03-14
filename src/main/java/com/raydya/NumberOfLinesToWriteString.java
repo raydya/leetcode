@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class NumberOfLinesToWriteString {
+
     public int[] numberOfLines(int[] widths, String s) {
         int r = 1;
         int l = 0;

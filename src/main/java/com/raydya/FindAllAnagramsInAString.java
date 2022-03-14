@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindAllAnagramsInAString {
+
     public List<Integer> findAnagrams(String s, String p) {
         int n = s.length(), m = p.length();
         List<Integer> res = new ArrayList<>();
-        if (n < m) return res;
+        if (n < m) {
+            return res;
+        }
 
         int[] pCnt = new int[26];
         int[] sCnt = new int[26];

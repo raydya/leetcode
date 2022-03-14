@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class TransposeMatrix {
+
     public int[][] transpose(int[][] matrix) {
         final int m = matrix.length;
         final int n = matrix[0].length;

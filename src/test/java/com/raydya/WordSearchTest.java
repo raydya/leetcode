@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class WordSearchTest {
+
     @Test
     public void test1() {
         final char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
@@ -42,7 +43,9 @@ public class WordSearchTest {
 
     @Test
     public void test5() {
-        final char[][] board = new char[][]{{'a', 'a', 'a'}, {'a', 'b', 'b'}, {'a', 'b', 'b'}, {'b', 'b', 'b'}, {'b', 'b', 'b'}, {'a', 'a', 'a'}, {'b', 'b', 'b'}, {'a', 'b', 'b'}, {'a', 'a', 'b'}, {'a', 'b', 'a'}};
+        final char[][] board = new char[][]{{'a', 'a', 'a'}, {'a', 'b', 'b'}, {'a', 'b', 'b'},
+            {'b', 'b', 'b'}, {'b', 'b', 'b'}, {'a', 'a', 'a'}, {'b', 'b', 'b'}, {'a', 'b', 'b'},
+            {'a', 'a', 'b'}, {'a', 'b', 'a'}};
         final WordSearch solution = new WordSearch();
         final boolean exist = solution.exist(board, "aabaaaabbb");
 

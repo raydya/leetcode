@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NaYingBiTest {
+
     @Test
     public void test1() {
         final NaYingBi solution = new NaYingBi();

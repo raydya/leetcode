@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LongestSubstringWithAtLeastKRepeatingCharactersTest {
+
     @Test
     public void test1() {
         final LongestSubstringWithAtLeastKRepeatingCharacters solution = new LongestSubstringWithAtLeastKRepeatingCharacters();

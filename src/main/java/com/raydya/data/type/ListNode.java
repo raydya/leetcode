@@ -1,6 +1,7 @@
 package com.raydya.data.type;
 
 public class ListNode {
+
     public int val;
 
     public ListNode next;

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BackspaceStringCompareTest {
+
     @Test
     public void test1() {
         final BackspaceStringCompare solution = new BackspaceStringCompare();

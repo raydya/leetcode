@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.LinkedList;
 
 public class RecentCounter {
+
     private final LinkedList<Integer> requests;
 
     public RecentCounter() {

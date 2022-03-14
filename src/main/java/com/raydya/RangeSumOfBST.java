@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class RangeSumOfBST {
+
     int sum = 0;
 
     public int rangeSumBST(TreeNode root, int low, int high) {
@@ -11,7 +12,9 @@ public class RangeSumOfBST {
     }
 
     private void iterator(TreeNode node, int low, int high) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         final int v = node.val;
         if (v < low) {

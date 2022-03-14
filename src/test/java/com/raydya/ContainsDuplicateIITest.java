@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ContainsDuplicateIITest {
+
     @Test
     public void test1() {
         final ContainsDuplicateII solution = new ContainsDuplicateII();
@@ -47,7 +48,8 @@ public class ContainsDuplicateIITest {
     @Test
     public void test6() {
         final ContainsDuplicateII solution = new ContainsDuplicateII();
-        final boolean duplicate = solution.containsNearbyDuplicate(new int[]{0, 1, 2, 3, 4, 5, 0}, 5);
+        final boolean duplicate = solution.containsNearbyDuplicate(new int[]{0, 1, 2, 3, 4, 5, 0},
+            5);
 
         Assert.assertFalse(duplicate);
     }

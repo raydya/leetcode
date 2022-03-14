@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class RepeatedSubStringPattern {
+
     public boolean repeatedSubstringPattern(String s) {
         return (s + s).indexOf(s, 1) != s.length();
 //        return kmp(s);

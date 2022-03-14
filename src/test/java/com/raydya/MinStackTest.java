@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MinStackTest {
+
     @Test
     public void test1() {
         MinStack minStack = new MinStack();

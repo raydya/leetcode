@@ -5,8 +5,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class SummaryRanges {
+
     public List<String> summaryRanges(int[] nums) {
-        if (nums.length == 0) return Collections.emptyList();
+        if (nums.length == 0) {
+            return Collections.emptyList();
+        }
 
         int pre = nums[0];
         int start = nums[0];

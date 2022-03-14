@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TruncateSentenceTest {
+
     @Test
     public void test1() {
         final TruncateSentence solution = new TruncateSentence();

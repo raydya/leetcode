@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class UniquePathsII {
+
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         final int m = obstacleGrid.length;
         final int n = obstacleGrid[0].length;

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class NthTribonacciNumber {
+
     private final int[] t = new int[38];
 
     public int tribonacci(int n) {

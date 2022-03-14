@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SubtractTheProductAndSumOfDigitsOfAnIntegerTest {
+
     @Test
     public void test1() {
         final SubtractTheProductAndSumOfDigitsOfAnInteger solution = new SubtractTheProductAndSumOfDigitsOfAnInteger();

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ElementAppearingMoreThan25InSortedArray {
+
     public int findSpecialInteger(int[] arr) {
         final double k = arr.length / 4.0;
 

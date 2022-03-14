@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class PalindromicSubstrings {
+
     public int countSubstrings(String s) {
         int n = s.length(), ans = 0;
         for (int i = 0; i < 2 * n - 1; ++i) {

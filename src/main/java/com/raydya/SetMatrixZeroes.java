@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SetMatrixZeroes {
+
     public void setZeroes(int[][] matrix) {
         boolean isCol = false;
         int m = matrix.length;

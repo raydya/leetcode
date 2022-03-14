@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TargetSumTest {
+
     @Test
     public void test1() {
         final TargetSum solution = new TargetSum();

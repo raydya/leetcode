@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ValidPalindromeIITest {
+
     @Test
     public void test1() {
         final ValidPalindromeII solution = new ValidPalindromeII();

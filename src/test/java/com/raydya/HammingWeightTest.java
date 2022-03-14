@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HammingWeightTest {
+
     @Test
     public void test1() {
         final int n = Integer.parseInt("00000000000000000000000000001011", 2);

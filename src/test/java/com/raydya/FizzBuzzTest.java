@@ -1,13 +1,13 @@
 package com.raydya;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class FizzBuzzTest {
+
     @Test
     public void test1() {
         final FizzBuzz solution = new FizzBuzz();

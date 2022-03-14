@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NAryTreePostorderTraversal {
+
     private final List<Integer> ret = new ArrayList<>();
 
     public List<Integer> postorder(Node root) {
@@ -12,7 +13,9 @@ public class NAryTreePostorderTraversal {
     }
 
     private void recursion(Node root) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
 
         if (root.children != null) {
             for (final Node child : root.children) {
@@ -24,6 +27,7 @@ public class NAryTreePostorderTraversal {
     }
 
     public static class Node {
+
         public int val;
         public List<Node> children;
 

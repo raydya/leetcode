@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NRepeatedElementInSize2nArrayTest {
+
     @Test
     public void test1() {
         final NRepeatedElementInSize2nArray solution = new NRepeatedElementInSize2nArray();

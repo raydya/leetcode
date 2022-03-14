@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MinCostClimbingStairs {
+
     public int minCostClimbingStairs(int[] cost) {
         final int[] f = new int[cost.length + 1];
 

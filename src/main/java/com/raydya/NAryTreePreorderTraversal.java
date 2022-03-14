@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NAryTreePreorderTraversal {
+
     private final List<Integer> ret = new ArrayList<>();
 
     public List<Integer> preorder(Node root) {
@@ -12,13 +13,17 @@ public class NAryTreePreorderTraversal {
     }
 
     private void recursion(Node node) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         ret.add(node.val);
 
         final List<Node> children = node.children;
 
-        if (children == null) return;
+        if (children == null) {
+            return;
+        }
 
         for (final Node child : children) {
             recursion(child);
@@ -26,6 +31,7 @@ public class NAryTreePreorderTraversal {
     }
 
     public static class Node {
+
         public int val;
         public List<Node> children;
 

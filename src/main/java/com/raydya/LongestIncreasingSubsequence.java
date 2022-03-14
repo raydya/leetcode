@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class LongestIncreasingSubsequence {
+
     public int lengthOfLIS(int[] nums) {
         int m = 1;
         int[] dp = new int[nums.length];

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class UniquePaths {
+
     // DP
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];

@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class SmallestRangeI {
+
     public int smallestRangeI(int[] nums, int k) {
-        if (nums.length == 1) return 0;
+        if (nums.length == 1) {
+            return 0;
+        }
 
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;

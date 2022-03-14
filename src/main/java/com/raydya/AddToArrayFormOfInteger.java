@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class AddToArrayFormOfInteger {
+
     public List<Integer> addToArrayForm(int[] num, int k) {
         List<Integer> res = new ArrayList<>();
         int n = num.length;

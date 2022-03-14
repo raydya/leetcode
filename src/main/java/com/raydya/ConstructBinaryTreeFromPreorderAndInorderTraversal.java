@@ -1,14 +1,18 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.Arrays;
 
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder == null || inorder == null || inorder.length == 0 || preorder.length == 0) return null;
+        if (preorder == null || inorder == null || inorder.length == 0 || preorder.length == 0) {
+            return null;
+        }
         TreeNode root = new TreeNode(preorder[0]);
-        if (preorder.length == 1) return root;
+        if (preorder.length == 1) {
+            return root;
+        }
         int breakindex = -1;
         for (int i = 0; i < inorder.length; i++) {
             if (inorder[i] == preorder[0]) {

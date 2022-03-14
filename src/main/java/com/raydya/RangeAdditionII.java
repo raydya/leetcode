@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class RangeAdditionII {
+
     public int maxCount(int m, int n, int[][] ops) {
         for (final int[] op : ops) {
             m = Math.min(m, op[0]);

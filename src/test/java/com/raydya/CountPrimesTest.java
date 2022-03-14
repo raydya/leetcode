@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CountPrimesTest {
+
     @Test
     public void test1() {
         final CountPrimes solution = new CountPrimes();

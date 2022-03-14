@@ -1,12 +1,12 @@
 package com.raydya;
 
 import com.raydya.data.type.GraphNode;
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class CloneGraphTest {
+
     @Test
     public void test1() {
         final GraphNode n1 = new GraphNode(1);

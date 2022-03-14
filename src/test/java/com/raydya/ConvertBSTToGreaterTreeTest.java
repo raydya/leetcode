@@ -2,15 +2,16 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class ConvertBSTToGreaterTreeTest {
+
     @Test
     public void test1() {
-        final TreeNode root = TreeNodeUtil.build(Arrays.asList(4, 1, 6, 0, 2, 5, 7, null, null, null, 3, null, null, null, 8));
+        final TreeNode root = TreeNodeUtil.build(
+            Arrays.asList(4, 1, 6, 0, 2, 5, 7, null, null, null, 3, null, null, null, 8));
 
         final ConvertBSTToGreaterTree solution = new ConvertBSTToGreaterTree();
         final TreeNode output = solution.convertBST(root);

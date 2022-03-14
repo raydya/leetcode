@@ -1,17 +1,18 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class RestoreIPAddressesTest {
+
     @Test
     public void test1() {
         final RestoreIPAddresses solution = new RestoreIPAddresses();
         final List<String> output = solution.restoreIpAddresses("25525511135");
 
-        Assert.assertArrayEquals(new String[]{"255.255.11.135", "255.255.111.35"}, output.toArray());
+        Assert.assertArrayEquals(new String[]{"255.255.11.135", "255.255.111.35"},
+            output.toArray());
     }
 
     @Test
@@ -35,6 +36,8 @@ public class RestoreIPAddressesTest {
         final RestoreIPAddresses solution = new RestoreIPAddresses();
         final List<String> output = solution.restoreIpAddresses("101023");
 
-        Assert.assertArrayEquals(new String[]{"1.0.10.23", "1.0.102.3", "10.1.0.23", "10.10.2.3", "101.0.2.3"}, output.toArray());
+        Assert.assertArrayEquals(
+            new String[]{"1.0.10.23", "1.0.102.3", "10.1.0.23", "10.10.2.3", "101.0.2.3"},
+            output.toArray());
     }
 }

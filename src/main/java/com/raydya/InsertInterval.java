@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.LinkedList;
 
 public class InsertInterval {
+
     public int[][] insert(int[][] intervals, int[] newInterval) {
         intervals = Arrays.copyOf(intervals, intervals.length + 1);
         intervals[intervals.length - 1] = newInterval;

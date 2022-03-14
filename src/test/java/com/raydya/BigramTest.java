@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BigramTest {
+
     @Test
     public void test1() {
         final Bigram solution = new Bigram();
-        final String[] output = solution.findOcurrences("alice is a good girl she is a good student", "a", "good");
+        final String[] output = solution.findOcurrences(
+            "alice is a good girl she is a good student", "a", "good");
 
         Assert.assertArrayEquals(new String[]{"girl", "student"}, output);
     }

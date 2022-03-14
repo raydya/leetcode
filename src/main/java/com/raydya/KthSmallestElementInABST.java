@@ -1,11 +1,11 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class KthSmallestElementInABST {
+
     public int kthSmallest(TreeNode root, int k) {
         final Queue<Integer> q = new LinkedList<>();
         buildQueue(root, q);
@@ -17,7 +17,9 @@ public class KthSmallestElementInABST {
     }
 
     private void buildQueue(TreeNode node, Queue<Integer> queue) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         buildQueue(node.left, queue);
 

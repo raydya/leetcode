@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class PartitionArrayIntoThreePartsWithEqualSum {
+
     public boolean canThreePartsEqualSum(int[] arr) {
         int sum = 0;
         for (final int i : arr) {
@@ -8,7 +9,9 @@ public class PartitionArrayIntoThreePartsWithEqualSum {
         }
 
         int remainder = sum % 3;
-        if (remainder > 0) return false;
+        if (remainder > 0) {
+            return false;
+        }
 
         int ps = sum / 3;
         int i = 0;

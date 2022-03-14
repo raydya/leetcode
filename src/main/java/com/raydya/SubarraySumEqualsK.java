@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.HashMap;
 
 public class SubarraySumEqualsK {
+
     public int subarraySum(int[] nums, int k) {
         int count = 0;
         int pre = 0;

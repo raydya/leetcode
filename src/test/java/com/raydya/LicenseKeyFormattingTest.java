@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LicenseKeyFormattingTest {
+
     @Test
     public void test1() {
         final LicenseKeyFormatting solution = new LicenseKeyFormatting();
@@ -28,7 +29,8 @@ public class LicenseKeyFormattingTest {
         final LicenseKeyFormatting solution = new LicenseKeyFormatting();
         final String output = solution.licenseKeyFormatting(s, k);
 
-        Assert.assertEquals(output, "EYRF-CYHXYUJZHYGIAZYP-JUDFDHVRNDWOQKQE-SCCLDIWHPMJUEADI-ZQIVEXBDDFNEGOVA-XYESZBZUTEKRUWUP-XRPBVKJUDQZIZZTJ");
+        Assert.assertEquals(output,
+            "EYRF-CYHXYUJZHYGIAZYP-JUDFDHVRNDWOQKQE-SCCLDIWHPMJUEADI-ZQIVEXBDDFNEGOVA-XYESZBZUTEKRUWUP-XRPBVKJUDQZIZZTJ");
     }
 
     @Test

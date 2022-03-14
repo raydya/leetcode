@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ImplementQueueUsingStacksTest {
+
     @Test
     public void test1() {
         final ImplementQueueUsingStacks.MyQueue solution = new ImplementQueueUsingStacks.MyQueue();

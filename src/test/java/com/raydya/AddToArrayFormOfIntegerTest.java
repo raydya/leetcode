@@ -1,11 +1,11 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class AddToArrayFormOfIntegerTest {
+
     @Test
     public void test1() {
         final AddToArrayFormOfInteger solution = new AddToArrayFormOfInteger();
@@ -33,9 +33,11 @@ public class AddToArrayFormOfIntegerTest {
     @Test
     public void test4() {
         final AddToArrayFormOfInteger solution = new AddToArrayFormOfInteger();
-        final List<Integer> output = solution.addToArrayForm(new int[]{9, 9, 9, 9, 9, 9, 9, 9, 9, 9}, 1);
+        final List<Integer> output = solution.addToArrayForm(
+            new int[]{9, 9, 9, 9, 9, 9, 9, 9, 9, 9}, 1);
 
-        Assert.assertArrayEquals(new Integer[]{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, output.toArray(new Integer[]{}));
+        Assert.assertArrayEquals(new Integer[]{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            output.toArray(new Integer[]{}));
     }
 
     @Test
@@ -49,9 +51,12 @@ public class AddToArrayFormOfIntegerTest {
     @Test
     public void test6() {
         final AddToArrayFormOfInteger solution = new AddToArrayFormOfInteger();
-        final List<Integer> output = solution.addToArrayForm(new int[]{1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3}, 516);
+        final List<Integer> output = solution.addToArrayForm(
+            new int[]{1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3}, 516);
 
-        Assert.assertArrayEquals(new Integer[]{1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 5, 7, 9}, output.toArray(new Integer[]{}));
+        Assert.assertArrayEquals(
+            new Integer[]{1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 5, 7, 9},
+            output.toArray(new Integer[]{}));
     }
 
     @Test

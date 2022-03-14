@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TransposeMatrixTest {
+
     @Test
     public void test1() {
         final TransposeMatrix solution = new TransposeMatrix();

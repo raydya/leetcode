@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DuplicateZeros {
+
     public void duplicateZeros(int[] arr) {
         final int[] origin = arr.clone();
         int offset = 0;
@@ -15,7 +16,9 @@ public class DuplicateZeros {
     }
 
     private void setValue(int[] array, int k, int v) {
-        if (k > array.length - 1) return;
+        if (k > array.length - 1) {
+            return;
+        }
         array[k] = v;
     }
 }

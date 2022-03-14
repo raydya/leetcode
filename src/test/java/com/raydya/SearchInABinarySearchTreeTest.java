@@ -2,12 +2,12 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class SearchInABinarySearchTreeTest {
+
     @Test
     public void test1() {
         final TreeNode root = TreeNodeUtil.build(Arrays.asList(4, 2, 7, 1, 3));

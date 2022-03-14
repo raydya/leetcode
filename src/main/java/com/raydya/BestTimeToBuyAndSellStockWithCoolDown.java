@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class BestTimeToBuyAndSellStockWithCoolDown {
+
     public int maxProfit(int[] prices) {
         if (prices.length == 0) {
             return 0;

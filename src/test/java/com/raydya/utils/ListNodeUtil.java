@@ -3,6 +3,7 @@ package com.raydya.utils;
 import com.raydya.data.type.ListNode;
 
 public class ListNodeUtil {
+
     public static ListNode build(int[] nums) {
         final int val = nums[0];
         final ListNode head = new ListNode(val);

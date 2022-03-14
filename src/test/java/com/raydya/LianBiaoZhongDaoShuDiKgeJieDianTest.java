@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LianBiaoZhongDaoShuDiKgeJieDianTest {
+
     @Test
     public void test1() {
         final ListNode head = ListNodeUtil.build(new int[]{1, 2, 3, 4, 5});

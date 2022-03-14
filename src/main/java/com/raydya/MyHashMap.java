@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MyHashMap {
+
     private final Integer[] holder;
 
     /**
@@ -18,7 +19,8 @@ public class MyHashMap {
     }
 
     /**
-     * Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
+     * Returns the value to which the specified key is mapped, or -1 if this map contains no mapping
+     * for the key
      */
     public int get(int key) {
         return this.holder[key] == null ? -1 : this.holder[key];

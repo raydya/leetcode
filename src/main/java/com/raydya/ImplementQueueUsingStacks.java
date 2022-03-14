@@ -4,10 +4,12 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class ImplementQueueUsingStacks {
+
     private ImplementQueueUsingStacks() {
     }
 
     public static class MyQueue {
+
         private final Deque<Integer> stack;
 
         public MyQueue() {

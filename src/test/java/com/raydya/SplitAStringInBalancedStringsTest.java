@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SplitAStringInBalancedStringsTest {
+
     @Test
     public void test1() {
         final SplitAStringInBalancedStrings solution = new SplitAStringInBalancedStrings();

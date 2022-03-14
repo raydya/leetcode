@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CanPlaceFlowers {
+
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         int plant = 0;
         for (int i = 0; i < flowerbed.length; i++) {

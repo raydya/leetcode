@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindWinnerOnATicTacToeGame {
+
     public String tictactoe(int[][] moves) {
         final char[][] board = new char[3][3];
 
@@ -41,8 +42,12 @@ public class FindWinnerOnATicTacToeGame {
                 }
             }
 
-            if (rw && r != 0) return String.valueOf(r);
-            if (cw && c != 0) return String.valueOf(c);
+            if (rw && r != 0) {
+                return String.valueOf(r);
+            }
+            if (cw && c != 0) {
+                return String.valueOf(c);
+            }
         }
 
         return t == 9 ? "Draw" : "Pending";

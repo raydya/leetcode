@@ -2,9 +2,6 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class IncreasingOrderSearchTree {
 //    public TreeNode increasingBST(TreeNode root) {
 //        final List<Integer> bst = traversal(root, new ArrayList<>());

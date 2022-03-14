@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FloodFillTest {
+
     @Test
     public void test1() {
         final int[][] image = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};

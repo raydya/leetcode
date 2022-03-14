@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MaximumNestingDepthOfTheParentheses {
+
     public int maxDepth(String s) {
         int lb = 0;
         int rb = 0;

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class AverageSalaryExcludingTheMinimumAndMaximumSalaryTest {
+
     @Test
     public void test1() {
         final AverageSalaryExcludingTheMinimumAndMaximumSalary solution = new AverageSalaryExcludingTheMinimumAndMaximumSalary();

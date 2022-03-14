@@ -1,7 +1,6 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -21,7 +20,9 @@ public class BinaryTreePreorderTraversal {
     }
 
     private void recursion(TreeNode node, List<Integer> ret) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         ret.add(node.val);
 

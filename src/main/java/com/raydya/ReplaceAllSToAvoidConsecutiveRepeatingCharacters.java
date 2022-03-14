@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ReplaceAllSToAvoidConsecutiveRepeatingCharacters {
+
     public String modifyString(String s) {
         final char[] chars = s.toCharArray();
         for (int i = 0; i < chars.length; i++) {
@@ -17,8 +18,12 @@ public class ReplaceAllSToAvoidConsecutiveRepeatingCharacters {
                     final char r = chars[i + 1];
                     rn = r - 'a';
                 }
-                if (n == ln || n == rn) n++;
-                if (n == ln || n == rn) n++;
+                if (n == ln || n == rn) {
+                    n++;
+                }
+                if (n == ln || n == rn) {
+                    n++;
+                }
                 chars[i] = (char) (n + 'a');
             }
         }

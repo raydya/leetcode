@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CellsWithOddValuesInAMatrix {
+
     public int oddCells(int m, int n, int[][] indices) {
         final int[][] holder = new int[m][n];
 
@@ -26,7 +27,9 @@ public class CellsWithOddValuesInAMatrix {
                     h[j] += columnCnt.get(j);
                 }
 
-                if (h[j] % 2 != 0) ret++;
+                if (h[j] % 2 != 0) {
+                    ret++;
+                }
             }
         }
 

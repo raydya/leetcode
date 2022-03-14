@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MinimumCostToMoveChipsToTheSamePositionTest {
+
     @Test
     public void test1() {
         final MinimumCostToMoveChipsToTheSamePosition solution = new MinimumCostToMoveChipsToTheSamePosition();

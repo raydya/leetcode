@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ConvertSortedListToBinarySearchTreeTest {
+
     @Test
     public void test1() {
         ListNode n4 = new ListNode(9);

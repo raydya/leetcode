@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class KeyboardRow {
+
     private Map<Character, Integer> map = new HashMap<Character, Integer>() {
         {
             put('e', 1);
@@ -53,7 +54,9 @@ public class KeyboardRow {
                 }
             }
 
-            if (sameRow) ret.add(words[i]);
+            if (sameRow) {
+                ret.add(words[i]);
+            }
         }
 
         return ret.toArray(new String[]{});

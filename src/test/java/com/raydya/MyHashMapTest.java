@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyHashMapTest {
+
     @Test
     public void test1() {
         final MyHashMap obj = new MyHashMap();

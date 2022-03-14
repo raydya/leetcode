@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CountSpecialQuadruplets {
+
     public int countQuadruplets(int[] nums) {
         int cnt = 0;
 
@@ -8,7 +9,9 @@ public class CountSpecialQuadruplets {
             for (int j = i + 1; j < nums.length; j++) {
                 for (int k = j + 1; k < nums.length; k++) {
                     for (int l = k + 1; l < nums.length; l++) {
-                        if (nums[i] + nums[j] + nums[k] == nums[l]) cnt++;
+                        if (nums[i] + nums[j] + nums[k] == nums[l]) {
+                            cnt++;
+                        }
                     }
                 }
             }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Subsets {
+
     public List<List<Integer>> subsets(int[] nums) {
         int n = nums.length;
         List<List<Integer>> output = new ArrayList<>();
@@ -13,7 +14,8 @@ public class Subsets {
         return output;
     }
 
-    private void backtrack(int first, ArrayList<Integer> curr, int[] nums, int n, int k, List<List<Integer>> output) {
+    private void backtrack(int first, ArrayList<Integer> curr, int[] nums, int n, int k,
+        List<List<Integer>> output) {
         // if the combination is done
         if (curr.size() == k) {
             output.add(new ArrayList<>(curr));

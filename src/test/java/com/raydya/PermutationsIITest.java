@@ -1,11 +1,11 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class PermutationsIITest {
+
     @Test
     public void test1() {
         final PermutationsII solution = new PermutationsII();

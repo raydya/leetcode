@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyQueueTest {
+
     @Test
     public void test1() {
         MyQueue myQueue = new MyQueue();

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LuckyNumbersInAMatrix {
+
     public List<Integer> luckyNumbers(int[][] matrix) {
         final int m = matrix.length;
         final int n = matrix[0].length;

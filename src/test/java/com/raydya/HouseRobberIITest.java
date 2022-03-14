@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HouseRobberIITest {
+
     @Test
     public void test1() {
         final HouseRobberII solution = new HouseRobberII();

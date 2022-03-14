@@ -3,6 +3,7 @@ package com.raydya.PrintInOrder;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Foo {
+
     private AtomicInteger firstJobDone = new AtomicInteger(0);
     private AtomicInteger secondJobDone = new AtomicInteger(0);
 

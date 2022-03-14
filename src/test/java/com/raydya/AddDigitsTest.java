@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class AddDigitsTest {
+
     @Test
     public void test1() {
         final AddDigits solution = new AddDigits();

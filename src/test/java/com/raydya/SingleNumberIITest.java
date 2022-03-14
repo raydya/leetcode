@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SingleNumberIITest {
+
     @Test
     public void test1() {
         final SingleNumberII solution = new SingleNumberII();
@@ -23,7 +24,8 @@ public class SingleNumberIITest {
     @Test
     public void test3() {
         final SingleNumberII solution = new SingleNumberII();
-        final int output = solution.singleNumber(new int[]{30000, 500, 100, 30000, 100, 30000, 100});
+        final int output = solution.singleNumber(
+            new int[]{30000, 500, 100, 30000, 100, 30000, 100});
 
         Assert.assertEquals(500, output);
     }

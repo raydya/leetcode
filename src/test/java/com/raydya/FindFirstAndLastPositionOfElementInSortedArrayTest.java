@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindFirstAndLastPositionOfElementInSortedArrayTest {
+
     @Test
     public void test1() {
         final FindFirstAndLastPositionOfElementInSortedArray solution = new FindFirstAndLastPositionOfElementInSortedArray();
@@ -63,7 +64,8 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
     @Test
     public void test8() {
         final FindFirstAndLastPositionOfElementInSortedArray solution = new FindFirstAndLastPositionOfElementInSortedArray();
-        final int[] searchRange = solution.searchRange(new int[]{0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 4}, 3);
+        final int[] searchRange = solution.searchRange(
+            new int[]{0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 4}, 3);
 
         Assert.assertArrayEquals(new int[]{12, 12}, searchRange);
     }

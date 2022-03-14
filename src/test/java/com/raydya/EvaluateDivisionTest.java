@@ -1,11 +1,11 @@
 package com.raydya;
 
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class EvaluateDivisionTest {
+
     @Test
     public void test1() {
         final EvaluateDivision solution = new EvaluateDivision();

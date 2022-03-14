@@ -1,6 +1,7 @@
 package com.raydya.data.type;
 
 public class TreeNode {
+
     public int val;
     public TreeNode left;
     public TreeNode right;

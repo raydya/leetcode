@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class MinStack {
+
     private ListNode top;
     private int min = Integer.MAX_VALUE;
 

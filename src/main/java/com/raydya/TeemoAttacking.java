@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class TeemoAttacking {
+
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         int ret = 0;
         int pe = 0;

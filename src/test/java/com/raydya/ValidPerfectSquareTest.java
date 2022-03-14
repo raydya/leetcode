@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ValidPerfectSquareTest {
+
     @Test
     public void test1() {
         final ValidPerfectSquare solution = new ValidPerfectSquare();

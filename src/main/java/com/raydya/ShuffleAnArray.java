@@ -3,10 +3,15 @@ package com.raydya;
 import java.util.Random;
 
 public class ShuffleAnArray {
+
+    Random rand = new Random();
     private int[] array;
     private int[] original;
 
-    Random rand = new Random();
+    public ShuffleAnArray(int[] nums) {
+        array = nums;
+        original = nums.clone();
+    }
 
     private int randRange(int min, int max) {
         return rand.nextInt(max - min) + min;
@@ -16,11 +21,6 @@ public class ShuffleAnArray {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
-    }
-
-    public ShuffleAnArray(int[] nums) {
-        array = nums;
-        original = nums.clone();
     }
 
     public int[] reset() {

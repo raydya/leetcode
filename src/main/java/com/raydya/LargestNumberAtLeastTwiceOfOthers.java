@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class LargestNumberAtLeastTwiceOfOthers {
+
     public int dominantIndex(int[] nums) {
-        if (nums.length == 1) return 0;
+        if (nums.length == 1) {
+            return 0;
+        }
         int max = 0;
         int sMax = 0;
         int index = 0;
@@ -18,7 +21,9 @@ public class LargestNumberAtLeastTwiceOfOthers {
             }
         }
 
-        if (max >= sMax * 2) return index;
+        if (max >= sMax * 2) {
+            return index;
+        }
 
         return -1;
     }

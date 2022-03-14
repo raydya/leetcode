@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MaximumAverageSubarrayI {
+
     public double findMaxAverage(int[] nums, int k) {
         int[] dp = new int[nums.length];
         dp[0] = nums[0];

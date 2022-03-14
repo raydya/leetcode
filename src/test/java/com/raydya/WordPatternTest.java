@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class WordPatternTest {
+
     @Test
     public void test1() {
         final WordPattern solution = new WordPattern();

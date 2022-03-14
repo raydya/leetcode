@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ComplementOfBase10Integer {
+
     public int bitwiseComplement(int n) {
         int _n = n, mask = 1;
         while (_n != 0) {

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ShortestUnsortedContinuousSubarrayTest {
+
     @Test
     public void test1() {
         final ShortestUnsortedContinuousSubarray solution = new ShortestUnsortedContinuousSubarray();

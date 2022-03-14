@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CountBits {
+
     public int[] countBits(int num) {
         if (num == 0) {
             return new int[]{0};

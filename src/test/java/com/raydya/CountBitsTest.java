@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CountBitsTest {
+
     @Test
     public void test1() {
         final CountBits solution = new CountBits();

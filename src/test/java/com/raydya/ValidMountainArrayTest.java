@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ValidMountainArrayTest {
+
     @Test
     public void test1() {
         final ValidMountainArray solution = new ValidMountainArray();

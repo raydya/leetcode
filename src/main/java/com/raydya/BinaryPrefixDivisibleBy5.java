@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryPrefixDivisibleBy5 {
+
     public List<Boolean> prefixesDivBy5(int[] nums) {
         List<Boolean> output = new ArrayList<>();
 

@@ -1,11 +1,11 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class FindCommonCharactersTest {
+
     @Test
     public void test1() {
         final FindCommonCharacters solution = new FindCommonCharacters();
@@ -25,7 +25,9 @@ public class FindCommonCharactersTest {
     @Test
     public void test3() {
         final FindCommonCharacters solution = new FindCommonCharacters();
-        final List<String> output = solution.commonChars(new String[]{"acabcddd", "bcbdbcbd", "baddbadb", "cbdddcac", "aacbcccd", "ccccddda", "cababaab", "addcaccd"});
+        final List<String> output = solution.commonChars(
+            new String[]{"acabcddd", "bcbdbcbd", "baddbadb", "cbdddcac", "aacbcccd", "ccccddda",
+                "cababaab", "addcaccd"});
 
         Assert.assertArrayEquals(new String[]{}, output.toArray(new String[]{}));
     }

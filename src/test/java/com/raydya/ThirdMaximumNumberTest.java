@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ThirdMaximumNumberTest {
+
     @Test
     public void test1() {
         final ThirdMaximumNumber solution = new ThirdMaximumNumber();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LemonadeChangeTest {
+
     @Test
     public void test1() {
         final LemonadeChange solution = new LemonadeChange();
@@ -39,7 +40,8 @@ public class LemonadeChangeTest {
     @Test
     public void test5() {
         final LemonadeChange solution = new LemonadeChange();
-        final boolean output = solution.lemonadeChange(new int[]{5, 5, 10, 20, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 5, 5, 20, 5, 20, 5});
+        final boolean output = solution.lemonadeChange(
+            new int[]{5, 5, 10, 20, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 5, 5, 20, 5, 20, 5});
 
         Assert.assertTrue(output);
     }

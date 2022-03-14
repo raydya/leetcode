@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RemoveDuplicatesFromSortedListIITest {
+
     @Test
     public void test1() {
         final ListNode n6 = new ListNode(5);

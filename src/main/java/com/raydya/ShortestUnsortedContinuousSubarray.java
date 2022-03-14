@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ShortestUnsortedContinuousSubarray {
+
     public int findUnsortedSubarray(int[] nums) {
         int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
         for (int i = 1; i < nums.length; i++) {
@@ -15,12 +16,14 @@ public class ShortestUnsortedContinuousSubarray {
         }
         int l, r;
         for (l = 0; l < nums.length; l++) {
-            if (min < nums[l])
+            if (min < nums[l]) {
                 break;
+            }
         }
         for (r = nums.length - 1; r >= 0; r--) {
-            if (max > nums[r])
+            if (max > nums[r]) {
                 break;
+            }
         }
         return r - l < 0 ? 0 : r - l + 1;
     }

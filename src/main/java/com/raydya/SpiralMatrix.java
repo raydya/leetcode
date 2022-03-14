@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SpiralMatrix {
+
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> ans = new ArrayList<>();
-        if (matrix.length == 0) return ans;
+        if (matrix.length == 0) {
+            return ans;
+        }
 
         int r1 = 0, r2 = matrix.length - 1;
         int c1 = 0, c2 = matrix[0].length - 1;

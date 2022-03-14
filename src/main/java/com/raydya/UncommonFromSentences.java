@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class UncommonFromSentences {
+
     public String[] uncommonFromSentences(String s1, String s2) {
         final Map<String, Integer> m1 = getMap(s1);
         final Map<String, Integer> m2 = getMap(s2);

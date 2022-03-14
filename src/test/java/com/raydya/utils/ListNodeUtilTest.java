@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ListNodeUtilTest {
+
     @Test
     public void test1() {
         final ListNode head = ListNodeUtil.build(new int[]{4, 2, 1, 3});

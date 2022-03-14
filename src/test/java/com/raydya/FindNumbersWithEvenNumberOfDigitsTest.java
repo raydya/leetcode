@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindNumbersWithEvenNumberOfDigitsTest {
+
     @Test
     public void test1() {
         final FindNumbersWithEvenNumberOfDigits solution = new FindNumbersWithEvenNumberOfDigits();

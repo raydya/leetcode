@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GoatLatin {
+
     public String toGoatLatin(String sentence) {
         final String[] strs = sentence.split(" ");
 

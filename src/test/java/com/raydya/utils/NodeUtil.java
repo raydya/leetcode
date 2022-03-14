@@ -3,8 +3,11 @@ package com.raydya.utils;
 import com.raydya.data.type.Node;
 
 public class NodeUtil {
+
     public static Node build(Integer[] nums) {
-        if (nums == null || nums.length == 0) return null;
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
         final int val = nums[0];
         final Node root = new Node(val);
         root.left = buildSub(nums, 1, 1, 1);
@@ -13,9 +16,13 @@ public class NodeUtil {
     }
 
     private static Node buildSub(Integer[] nums, int index, int level, int levelStart) {
-        if (index >= nums.length) return null;
+        if (index >= nums.length) {
+            return null;
+        }
         final Integer val = nums[index];
-        if (val == null) return null;
+        if (val == null) {
+            return null;
+        }
         final Node node = new Node(val);
         final int capacity = (int) Math.pow(2, level);
         final int offset = index - levelStart;

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ImageSmootherTest {
+
     @Test
     public void test1() {
         final ImageSmoother solution = new ImageSmoother();
@@ -16,8 +17,10 @@ public class ImageSmootherTest {
     @Test
     public void test2() {
         final ImageSmoother solution = new ImageSmoother();
-        final int[][] output = solution.imageSmoother(new int[][]{{100, 200, 100}, {200, 50, 200}, {100, 200, 100}});
+        final int[][] output = solution.imageSmoother(
+            new int[][]{{100, 200, 100}, {200, 50, 200}, {100, 200, 100}});
 
-        Assert.assertArrayEquals(new int[][]{{137, 141, 137}, {141, 138, 141}, {137, 141, 137}}, output);
+        Assert.assertArrayEquals(new int[][]{{137, 141, 137}, {141, 138, 141}, {137, 141, 137}},
+            output);
     }
 }

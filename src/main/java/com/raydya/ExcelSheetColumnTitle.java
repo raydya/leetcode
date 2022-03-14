@@ -2,6 +2,7 @@ package com.raydya;
 
 
 public class ExcelSheetColumnTitle {
+
     private static final String[] MAPPING = new String[]{
         "A", "B", "C", "D", "E",
         "F", "G", "H", "I", "J",
@@ -18,7 +19,6 @@ public class ExcelSheetColumnTitle {
 
         int quotient = n / 26;
         int remain = n % 26;
-
 
         if (remain == 0) {
             final String remainStr = MAPPING[25];

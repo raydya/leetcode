@@ -6,20 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public class CopyListWithRandomPointer {
-    public static class Node {
-        int val;
-        Node next;
-        Node random;
-
-        public Node(int val) {
-            this.val = val;
-            this.next = null;
-            this.random = null;
-        }
-    }
 
     public Node copyRandomList(Node head) {
-        if (head == null) return null;
+        if (head == null) {
+            return null;
+        }
         Node current = head;
         Map<Node, Integer> nodeMap = new HashMap<>();
         List<Node> originals = new ArrayList<>();
@@ -42,5 +33,18 @@ public class CopyListWithRandomPointer {
         }
 
         return nodes.get(0);
+    }
+
+    public static class Node {
+
+        int val;
+        Node next;
+        Node random;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
     }
 }

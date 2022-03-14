@@ -3,11 +3,14 @@ package com.raydya;
 import java.util.Arrays;
 
 public class LongestSubstringWithoutRepeatingCharacters {
+
     private static final int NO_OF_CHARS = 256;
 
     public int lengthOfLongestSubstring(String s) {
         final int length = s.length();
-        if (length == 0) return 0;
+        if (length == 0) {
+            return 0;
+        }
 
         int res = 0;
 

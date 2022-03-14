@@ -1,8 +1,11 @@
 package com.raydya;
 
 public class GetMaximumInGeneratedArray {
+
     public int getMaximumGenerated(int n) {
-        if (n == 0) return 0;
+        if (n == 0) {
+            return 0;
+        }
         final int[] nums = new int[n + 1];
         int max = 1;
         nums[0] = 0;

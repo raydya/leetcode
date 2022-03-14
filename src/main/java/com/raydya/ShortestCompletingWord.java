@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ShortestCompletingWord {
+
     private static final int ALPHABET_LENGTH = 26;
 
     public String shortestCompletingWord(String licensePlate, String[] words) {
@@ -35,7 +36,9 @@ public class ShortestCompletingWord {
         }
 
         for (int i = 0; i < ALPHABET_LENGTH; i++) {
-            if (ts[i] > cs[i]) return false;
+            if (ts[i] > cs[i]) {
+                return false;
+            }
         }
 
         return true;

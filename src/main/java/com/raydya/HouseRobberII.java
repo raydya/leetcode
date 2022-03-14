@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class HouseRobberII {
+
     public int rob(int[] nums) {
         int length = nums.length;
         if (length == 1) {

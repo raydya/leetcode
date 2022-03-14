@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class BottleCost {
+
     public int consume(int dollar) {
         final int initBottle = dollar / 2;
         int total = initBottle;

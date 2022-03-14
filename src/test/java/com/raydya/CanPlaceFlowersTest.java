@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CanPlaceFlowersTest {
+
     @Test
     public void test1() {
         final CanPlaceFlowers solution = new CanPlaceFlowers();

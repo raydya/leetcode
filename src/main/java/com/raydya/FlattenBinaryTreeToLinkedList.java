@@ -3,8 +3,11 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class FlattenBinaryTreeToLinkedList {
+
     public void flatten(TreeNode root) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
         TreeNode iterator = root;
 
         while (iterator != null) {

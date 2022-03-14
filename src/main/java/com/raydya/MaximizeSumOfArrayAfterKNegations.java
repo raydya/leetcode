@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class MaximizeSumOfArrayAfterKNegations {
+
     public int largestSumAfterKNegations(int[] nums, int k) {
         Arrays.sort(nums);
 
@@ -18,7 +19,9 @@ public class MaximizeSumOfArrayAfterKNegations {
             }
         }
 
-        if (k == 0) return total;
+        if (k == 0) {
+            return total;
+        }
 
         Arrays.sort(nums);
 

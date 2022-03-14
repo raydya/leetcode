@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class GuessNumberHigherOrLower {
+
     public int guessNumber(int n, int pick) {
         int s = 1;
         int e = n;

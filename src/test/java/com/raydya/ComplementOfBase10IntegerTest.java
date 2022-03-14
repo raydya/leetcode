@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ComplementOfBase10IntegerTest {
+
     @Test
     public void test1() {
         final ComplementOfBase10Integer solution = new ComplementOfBase10Integer();

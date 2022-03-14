@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class SearchInABinarySearchTree {
+
     public TreeNode searchBST(TreeNode root, int val) {
         TreeNode node = root;
 

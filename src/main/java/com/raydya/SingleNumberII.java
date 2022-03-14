@@ -3,8 +3,11 @@ package com.raydya;
 import java.util.HashMap;
 
 public class SingleNumberII {
+
     public int singleNumber(int[] nums) {
-        if (nums.length == 1) return nums[0];
+        if (nums.length == 1) {
+            return nums[0];
+        }
 
         final HashMap<Integer, Integer> holder = new HashMap<>(nums.length);
 

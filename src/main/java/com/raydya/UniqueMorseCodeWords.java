@@ -4,7 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UniqueMorseCodeWords {
-    private static final String[] MORSE_CODE_TABLE = new String[]{".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
+
+    private static final String[] MORSE_CODE_TABLE = new String[]{".-", "-...", "-.-.", "-..", ".",
+        "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-",
+        ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
 
     public int uniqueMorseRepresentations(String[] words) {
         Set<String> uniqueCodes = new HashSet<>();

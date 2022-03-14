@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class XOfAKindInADeckOfCardsTest {
+
     @Test
     public void test1() {
         final XOfAKindInADeckOfCards solution = new XOfAKindInADeckOfCards();

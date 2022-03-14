@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LargestNumberTest {
+
     @Test
     public void test1() {
         final LargestNumber solution = new LargestNumber();

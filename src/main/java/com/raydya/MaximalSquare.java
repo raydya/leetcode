@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MaximalSquare {
+
     public int maximalSquare(char[][] matrix) {
         final int m = matrix.length;
         final int n = matrix[0].length;
@@ -15,7 +16,8 @@ public class MaximalSquare {
                     if (i == 0 || j == 0) {
                         dp[i][j] = 1;
                     } else {
-                        dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
+                        dp[i][j] =
+                            Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
                     }
                     side = Math.max(side, dp[i][j]);
                 }

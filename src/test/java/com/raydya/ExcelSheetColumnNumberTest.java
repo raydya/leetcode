@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ExcelSheetColumnNumberTest {
+
     @Test
     public void test1() {
         final ExcelSheetColumnNumber solution = new ExcelSheetColumnNumber();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BinarySearchTest {
+
     @Test
     public void test1() {
         final BinarySearch solution = new BinarySearch();

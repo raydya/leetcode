@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class PartitionEqualSubsetSum {
+
     public boolean canPartition(int[] nums) {
         int n = nums.length;
         if (n < 2) {

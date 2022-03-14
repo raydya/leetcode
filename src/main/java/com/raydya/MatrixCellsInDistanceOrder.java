@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class MatrixCellsInDistanceOrder {
+
     public int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         final int k = rows * cols;
         final int[][] ret = new int[k][2];

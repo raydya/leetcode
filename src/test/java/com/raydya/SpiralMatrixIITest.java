@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SpiralMatrixIITest {
+
     @Test
     public void test1() {
         final SpiralMatrixII solution = new SpiralMatrixII();

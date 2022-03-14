@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CountLineBetweenDotsTest {
+
     @Test
     public void test1() {
         final CountLineBetweenDots solution = new CountLineBetweenDots();

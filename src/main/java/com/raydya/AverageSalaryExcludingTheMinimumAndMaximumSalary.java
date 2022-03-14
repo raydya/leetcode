@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class AverageSalaryExcludingTheMinimumAndMaximumSalary {
+
     public double average(int[] salary) {
         Arrays.sort(salary);
 

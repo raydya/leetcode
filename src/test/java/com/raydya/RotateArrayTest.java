@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RotateArrayTest {
+
     @Test
     public void test1() {
         final RotateArray solution = new RotateArray();

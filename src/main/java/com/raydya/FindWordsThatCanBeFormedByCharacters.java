@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindWordsThatCanBeFormedByCharacters {
+
     public int countCharacters(String[] words, String chars) {
         int t = 0;
 

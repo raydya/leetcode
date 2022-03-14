@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class TruncateSentence {
+
     public String truncateSentence(String s, int k) {
         final StringBuilder ret = new StringBuilder();
 

@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class ValidSudoku {
+
     private static final int ASCII_TABLE_INDEX_ONE = 48;
     private static final int BOARD_SIZE = 9;
 
@@ -23,19 +24,25 @@ public class ValidSudoku {
                 final char b = getChar(board[y][x]);
                 final int bi = b - ASCII_TABLE_INDEX_ONE;
                 bTable[bi]++;
-                if (bi != 0 && bTable[bi] > 1) return false;
+                if (bi != 0 && bTable[bi] > 1) {
+                    return false;
+                }
 
                 // ROW CHECK
                 final char r = getChar(board[i][j]);
                 final int ri = r - ASCII_TABLE_INDEX_ONE;
                 rTable[ri]++;
-                if (ri != 0 && rTable[ri] > 1) return false;
+                if (ri != 0 && rTable[ri] > 1) {
+                    return false;
+                }
 
                 // COLUMN CHECK
                 final char c = getChar(board[j][i]);
                 final int ci = c - ASCII_TABLE_INDEX_ONE;
                 cTable[ci]++;
-                if (ci != 0 && cTable[ci] > 1) return false;
+                if (ci != 0 && cTable[ci] > 1) {
+                    return false;
+                }
             }
         }
 

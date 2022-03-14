@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SurfaceAreaOf3DShapes {
+
     public int surfaceArea(int[][] grid) {
         int t = 0;
         final int m = grid.length;
@@ -9,7 +10,9 @@ public class SurfaceAreaOf3DShapes {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 final int g = grid[i][j];
-                if (g == 0) continue;
+                if (g == 0) {
+                    continue;
+                }
                 // 底面 & 顶面
                 t += 2;
 

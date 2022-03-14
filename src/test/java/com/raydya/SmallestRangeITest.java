@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SmallestRangeITest {
+
     @Test
     public void test1() {
         final SmallestRangeI solution = new SmallestRangeI();

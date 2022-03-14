@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PowerOfThreeTest {
+
     @Test
     public void test1() {
         final PowerOfThree solution = new PowerOfThree();

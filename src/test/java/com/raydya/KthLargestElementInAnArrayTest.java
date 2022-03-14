@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class KthLargestElementInAnArrayTest {
+
     @Test
     public void test1() {
         final KthLargestElementInAnArray solution = new KthLargestElementInAnArray();

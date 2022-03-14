@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RotateStringTest {
+
     @Test
     public void test1() {
         final RotateString solution = new RotateString();

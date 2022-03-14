@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 
 public class WordBreak {
+
     public boolean wordBreak(String s, List<String> wordDict) {
         Set<String> wordDictSet = new HashSet<>(wordDict);
         boolean[] dp = new boolean[s.length() + 1];

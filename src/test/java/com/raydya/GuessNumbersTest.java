@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GuessNumbersTest {
+
     @Test
     public void test1() {
         final GuessNumbers solution = new GuessNumbers();

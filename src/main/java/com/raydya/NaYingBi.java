@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class NaYingBi {
+
     public int minCount(int[] coins) {
         int cnt = 0;
         for (final int coin : coins) {

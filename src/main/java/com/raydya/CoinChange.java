@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class CoinChange {
+
     public int coinChange(int[] coins, int amount) {
         final int max = amount + 1;
         int[] dp = new int[max];

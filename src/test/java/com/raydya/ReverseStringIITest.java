@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ReverseStringIITest {
+
     @Test
     public void test1() {
         final ReverseStringII solution = new ReverseStringII();

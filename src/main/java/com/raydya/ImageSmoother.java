@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ImageSmoother {
+
     public int[][] imageSmoother(int[][] img) {
         final int[][] ret = new int[img.length][img[0].length];
 
@@ -20,7 +21,9 @@ public class ImageSmoother {
         for (int k = -1; k < 2; k++) {
             for (int l = -1; l < 2; l++) {
                 final int v = get(img, i + k, j + l);
-                if (v == -1) continue;
+                if (v == -1) {
+                    continue;
+                }
                 m += v;
                 d++;
             }
@@ -30,7 +33,9 @@ public class ImageSmoother {
     }
 
     private int get(int[][] img, int i, int j) {
-        if (i < 0 || j < 0 || i >= img.length || j >= img[0].length) return -1;
+        if (i < 0 || j < 0 || i >= img.length || j >= img[0].length) {
+            return -1;
+        }
         return img[i][j];
     }
 }

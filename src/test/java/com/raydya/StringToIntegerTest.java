@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StringToIntegerTest {
+
     @Test
     public void test1() {
         final StringToInteger solution = new StringToInteger();

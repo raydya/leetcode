@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class BestTimeToBuyAndSellStockII {
+
     public int maxProfit(int[] prices) {
         int maxprofit = 0;
         for (int i = 1; i < prices.length; i++) {

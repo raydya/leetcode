@@ -2,16 +2,17 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class PathSumIITest {
+
     @Test
     public void test1() {
-        List<Integer> vals = Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, 5, 1);
+        List<Integer> vals = Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null,
+            5, 1);
         final TreeNode root = TreeNodeUtil.build(vals);
 
         final PathSumII solution = new PathSumII();

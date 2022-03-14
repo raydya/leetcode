@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DayOfTheWeekTest {
+
     @Test
     public void test1() {
         final DayOfTheWeek solution = new DayOfTheWeek();

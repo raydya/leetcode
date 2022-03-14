@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ConvertBinaryNumberInALinkedListToIntegerTest {
+
     @Test
     public void test1() {
         final ListNode head = ListNodeUtil.build(new int[]{1, 0, 1});
@@ -38,7 +39,8 @@ public class ConvertBinaryNumberInALinkedListToIntegerTest {
 
     @Test
     public void test4() {
-        final ListNode head = ListNodeUtil.build(new int[]{1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0});
+        final ListNode head = ListNodeUtil.build(
+            new int[]{1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0});
 
         final ConvertBinaryNumberInALinkedListToInteger solution = new ConvertBinaryNumberInALinkedListToInteger();
         final int output = solution.getDecimalValue(head);

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class PowerOfFour {
+
     public boolean isPowerOfFour(int num) {
         if (num < 1) {
             return false;

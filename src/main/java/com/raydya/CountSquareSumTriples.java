@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CountSquareSumTriples {
+
     public int countTriples(int n) {
         int res = 0;
         // 枚举 a 与 b

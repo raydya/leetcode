@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class WiggleSortTest {
+
     @Test
     public void test1() {
         final int[] nums = {1, 5, 1, 1, 6, 4};

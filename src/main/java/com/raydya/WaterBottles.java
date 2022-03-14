@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class WaterBottles {
+
     public int numWaterBottles(int numBottles, int numExchange) {
         int total = numBottles;
         int empty = numBottles;

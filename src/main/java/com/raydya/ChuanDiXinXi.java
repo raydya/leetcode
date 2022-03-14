@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ChuanDiXinXi {
+
     public int numWays(int n, int[][] relation, int k) {
         boolean[][] map = new boolean[n][n];
         // 记录传递关系

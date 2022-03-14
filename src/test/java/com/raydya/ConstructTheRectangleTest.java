@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ConstructTheRectangleTest {
+
     @Test
     public void test1() {
         final ConstructTheRectangle solution = new ConstructTheRectangle();

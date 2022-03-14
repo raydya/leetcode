@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class MinimumDistanceBetweenBSTNodes {
+
     private int minVal = Integer.MAX_VALUE;
 
     public int minDiffInBST(TreeNode root) {
@@ -12,7 +13,9 @@ public class MinimumDistanceBetweenBSTNodes {
     }
 
     private void iterator(TreeNode node) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         final int max = getMax(node.left);
         minVal = Math.min(Math.abs(node.val - max), minVal);
@@ -25,7 +28,9 @@ public class MinimumDistanceBetweenBSTNodes {
     }
 
     private int getMax(TreeNode node) {
-        if (node == null) return Integer.MAX_VALUE;
+        if (node == null) {
+            return Integer.MAX_VALUE;
+        }
 
         int max = node.val;
         TreeNode tmp = node;
@@ -37,7 +42,9 @@ public class MinimumDistanceBetweenBSTNodes {
     }
 
     private int getMin(TreeNode node) {
-        if (node == null) return Integer.MAX_VALUE;
+        if (node == null) {
+            return Integer.MAX_VALUE;
+        }
 
         int min = node.val;
         TreeNode tmp = node;

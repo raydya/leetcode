@@ -2,9 +2,6 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LCAOfBST {
 //    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 //        if (root == null) return null;

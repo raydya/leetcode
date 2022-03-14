@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class JewelsAndStones {
+
     private static final int ALPHABET_LENGTH = 30;
 
     public int numJewelsInStones(String jewels, String stones) {
@@ -14,7 +15,9 @@ public class JewelsAndStones {
         for (int i = 0; i < stones.length(); i++) {
             final char stone = stones.charAt(i);
             final int k = alphabet[stone - 'A'];
-            if (k == 1) cnt++;
+            if (k == 1) {
+                cnt++;
+            }
         }
 
         return cnt;

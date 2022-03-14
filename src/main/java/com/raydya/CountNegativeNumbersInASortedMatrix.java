@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class CountNegativeNumbersInASortedMatrix {
+
     public int countNegatives(int[][] grid) {
         int c = 0;
         for (final int[] r : grid) {
@@ -14,8 +15,12 @@ public class CountNegativeNumbersInASortedMatrix {
                 continue;
             }
             for (int j = r.length - 1; j >= 0; j--) {
-                if (r[j] < 0) c++;
-                if (r[j] >= 0) break;
+                if (r[j] < 0) {
+                    c++;
+                }
+                if (r[j] >= 0) {
+                    break;
+                }
             }
         }
 

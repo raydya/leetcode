@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class ConvertBinaryNumberInALinkedListToInteger {
+
     public int getDecimalValue(ListNode head) {
         StringBuilder b = new StringBuilder();
         ListNode t = head;

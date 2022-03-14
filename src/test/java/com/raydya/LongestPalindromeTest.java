@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LongestPalindromeTest {
+
     @Test
     public void test1() {
         final LongestPalindrome solution = new LongestPalindrome();
@@ -55,7 +56,8 @@ public class LongestPalindromeTest {
     @Test
     public void test7() {
         final LongestPalindrome solution = new LongestPalindrome();
-        final int longestPalindrome = solution.longestPalindrome("zeusnilemacaronimaisanitratetartinasiaminoracamelinsuez");
+        final int longestPalindrome = solution.longestPalindrome(
+            "zeusnilemacaronimaisanitratetartinasiaminoracamelinsuez");
 
         Assert.assertEquals(55, longestPalindrome);
     }

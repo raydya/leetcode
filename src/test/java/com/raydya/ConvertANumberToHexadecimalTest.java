@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ConvertANumberToHexadecimalTest {
+
     @Test
     public void test1() {
         final ConvertANumberToHexadecimal solution = new ConvertANumberToHexadecimal();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DecompressRunLengthEncodedListTest {
+
     @Test
     public void test1() {
         final DecompressRunLengthEncodedList solution = new DecompressRunLengthEncodedList();

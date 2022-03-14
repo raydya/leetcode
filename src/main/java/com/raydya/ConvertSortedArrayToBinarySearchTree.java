@@ -1,14 +1,16 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.Arrays;
 
 public class ConvertSortedArrayToBinarySearchTree {
+
     public TreeNode sortedArrayToBST(int[] nums) {
         final int length = nums.length;
 
-        if (length == 0) return null;
+        if (length == 0) {
+            return null;
+        }
 
         if (length == 1) {
             return new TreeNode(nums[0]);

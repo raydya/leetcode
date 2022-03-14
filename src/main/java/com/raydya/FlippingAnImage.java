@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FlippingAnImage {
+
     public int[][] flipAndInvertImage(int[][] image) {
         for (int i = 0; i < image.length; i++) {
             final int[] r = image[i];

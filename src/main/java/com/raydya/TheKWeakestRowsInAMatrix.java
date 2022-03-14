@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class TheKWeakestRowsInAMatrix {
+
     public int[] kWeakestRows(int[][] mat, int k) {
         final int[] ret = new int[k];
 
@@ -13,7 +14,9 @@ public class TheKWeakestRowsInAMatrix {
         for (int i = 0; i < ml; i++) {
             for (int j = 0; j < rl; j++) {
                 final int t = mat[i][j];
-                if (t == 0) break;
+                if (t == 0) {
+                    break;
+                }
                 power[i] += t;
             }
         }

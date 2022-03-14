@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CanMakeArithmeticProgressionFromSequenceTest {
+
     @Test
     public void test1() {
         final CanMakeArithmeticProgressionFromSequence solution = new CanMakeArithmeticProgressionFromSequence();

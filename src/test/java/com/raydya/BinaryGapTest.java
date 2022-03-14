@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BinaryGapTest {
+
     @Test
     public void test1() {
         final BinaryGap solution = new BinaryGap();

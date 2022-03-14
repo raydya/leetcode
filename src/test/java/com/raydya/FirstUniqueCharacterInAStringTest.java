@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FirstUniqueCharacterInAStringTest {
+
     @Test
     public void test1() {
         final FirstUniqueCharacterInAString solution = new FirstUniqueCharacterInAString();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CopyListWithRandomPointerTest {
+
     @Test
     public void test1() {
         final CopyListWithRandomPointer.Node n4 = new CopyListWithRandomPointer.Node(1);

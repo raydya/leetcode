@@ -5,7 +5,9 @@ import com.raydya.data.type.ListNode;
 public class RemoveDuplicatesFromSortedList {
 
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null) return null;
+        if (head == null) {
+            return null;
+        }
 
         ListNode tmp = head;
         while (tmp.next != null) {

@@ -3,10 +3,13 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class BinaryTreeTilt {
+
     private int tilt;
 
     public int findTilt(TreeNode root) {
-        if (root == null) return 0;
+        if (root == null) {
+            return 0;
+        }
 
         findTilt(root.left);
         findTilt(root.right);

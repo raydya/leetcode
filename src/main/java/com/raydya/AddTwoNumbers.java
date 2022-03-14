@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.ListNode;
 
 public class AddTwoNumbers {
+
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode first = null;
         ListNode pointer = null;

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FactorialTrailingZeroesTest {
+
     @Test
     public void test1() {
         final FactorialTrailingZeroes solution = new FactorialTrailingZeroes();

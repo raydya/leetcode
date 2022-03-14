@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class HowManyNumbersAreSmallerThanTheCurrentNumber {
+
     public int[] smallerNumbersThanCurrent(int[] nums) {
         final int[] ret = new int[nums.length];
 

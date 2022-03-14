@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FractionToRecurringDecimalTest {
+
     @Test
     public void test1() {
         final FractionToRecurringDecimal solution = new FractionToRecurringDecimal();

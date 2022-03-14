@@ -34,8 +34,9 @@ public class PermutationsII {
         // count the occurrence of each number
         HashMap<Integer, Integer> counter = new HashMap<>();
         for (int num : nums) {
-            if (!counter.containsKey(num))
+            if (!counter.containsKey(num)) {
                 counter.put(num, 0);
+            }
             counter.put(num, counter.get(num) + 1);
         }
 
@@ -44,7 +45,8 @@ public class PermutationsII {
         return results;
     }
 
-    private void backtrack(LinkedList<Integer> comb, Integer N, HashMap<Integer, Integer> counter, List<List<Integer>> results) {
+    private void backtrack(LinkedList<Integer> comb, Integer N, HashMap<Integer, Integer> counter,
+        List<List<Integer>> results) {
         if (comb.size() == N) {
             // make a deep copy of the resulting permutation,
             // since the permutation would be backtracked later.
@@ -55,8 +57,9 @@ public class PermutationsII {
         for (Map.Entry<Integer, Integer> entry : counter.entrySet()) {
             Integer num = entry.getKey();
             Integer count = entry.getValue();
-            if (count == 0)
+            if (count == 0) {
                 continue;
+            }
             // add this number into the current combination
             comb.addLast(num);
             counter.put(num, count - 1);

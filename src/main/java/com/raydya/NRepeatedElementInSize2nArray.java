@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NRepeatedElementInSize2nArray {
+
     public int repeatedNTimes(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         int ret = -1;

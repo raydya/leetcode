@@ -3,8 +3,11 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class MinimumDepthOfBinaryTree {
+
     public int minDepth(TreeNode root) {
-        if (root == null) return 0;
+        if (root == null) {
+            return 0;
+        }
 
         final int mLeft = minDepth(root.left);
         final int mRight = minDepth(root.right);

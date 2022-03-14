@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindComplementTest {
+
     @Test
     public void test1() {
         final FindComplement solution = new FindComplement();

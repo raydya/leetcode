@@ -5,11 +5,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LCAOfBSTTest {
+
     @Test
     public void test1() {
         final TreeNode n8 = new TreeNode(9);
         final TreeNode n7 = new TreeNode(7);
-
 
         final TreeNode n6 = new TreeNode(5);
         final TreeNode n5 = new TreeNode(3);
@@ -31,7 +31,6 @@ public class LCAOfBSTTest {
     public void test2() {
         final TreeNode n8 = new TreeNode(9);
         final TreeNode n7 = new TreeNode(7);
-
 
         final TreeNode n6 = new TreeNode(5);
         final TreeNode n5 = new TreeNode(3);

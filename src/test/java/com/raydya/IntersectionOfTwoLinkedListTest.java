@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class IntersectionOfTwoLinkedListTest {
+
     @Test
     public void test1() {
         final ListNode c3 = new ListNode(5);

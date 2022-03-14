@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CountBinarySubstringsTest {
+
     @Test
     public void test1() {
         final CountBinarySubstrings solution = new CountBinarySubstrings();

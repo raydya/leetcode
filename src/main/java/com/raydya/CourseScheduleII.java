@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class CourseScheduleII {
+
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         int[] inDegrees = new int[numCourses];
         final List<List<Integer>> edges = new ArrayList<>(numCourses);

@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.LinkedList;
 
 public class MergeIntervals {
+
     public int[][] merge(int[][] intervals) {
         Comparator<int[]> comp = Comparator.comparingInt(a -> a[0]);
 

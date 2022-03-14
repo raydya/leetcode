@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class MyQueue {
+
     private int[] stack = new int[]{};
 
     /**

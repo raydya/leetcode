@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SearchInRotatedSortedArrayTest {
+
     @Test
     public void test1() {
         final SearchInRotatedSortedArray solution = new SearchInRotatedSortedArray();

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class AvailableCapturesForRook {
+
     private static final char ROOK = 'R';
     private static final char BISHOP = 'B';
     private static final char PAWN = 'p';
@@ -22,7 +23,9 @@ public class AvailableCapturesForRook {
         // left
         for (int i = x - 1; i >= 0; i--) {
             final char c = board[y][i];
-            if (c == BISHOP) break;
+            if (c == BISHOP) {
+                break;
+            }
             if (c == PAWN) {
                 t++;
                 break;
@@ -32,7 +35,9 @@ public class AvailableCapturesForRook {
         // right
         for (int i = x + 1; i < board[y].length; i++) {
             final char c = board[y][i];
-            if (c == BISHOP) break;
+            if (c == BISHOP) {
+                break;
+            }
             if (c == PAWN) {
                 t++;
                 break;
@@ -42,7 +47,9 @@ public class AvailableCapturesForRook {
         // top
         for (int i = y - 1; i >= 0; i--) {
             final char c = board[i][x];
-            if (c == BISHOP) break;
+            if (c == BISHOP) {
+                break;
+            }
             if (c == PAWN) {
                 t++;
                 break;
@@ -52,7 +59,9 @@ public class AvailableCapturesForRook {
         // bottom
         for (int i = y + 1; i < board.length; i++) {
             final char c = board[i][x];
-            if (c == BISHOP) break;
+            if (c == BISHOP) {
+                break;
+            }
             if (c == PAWN) {
                 t++;
                 break;

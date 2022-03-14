@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SortListTest {
+
     @Test
     public void test1() {
         final ListNode head = ListNodeUtil.build(new int[]{4, 2, 1, 3});

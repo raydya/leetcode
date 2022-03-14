@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SingleNumberTest {
+
     @Test
     public void test1() {
         final SingleNumber solution = new SingleNumber();

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class LongestUncommonSubsequenceI {
+
     public int findLUSlength(String a, String b) {
         if (a.equals(b) || "".equals(a) || "".equals(b)) {
             return -1;

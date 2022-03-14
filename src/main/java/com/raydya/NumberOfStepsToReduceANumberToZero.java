@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class NumberOfStepsToReduceANumberToZero {
+
     public int numberOfSteps(int num) {
         int c = 0;
         while (num > 0) {

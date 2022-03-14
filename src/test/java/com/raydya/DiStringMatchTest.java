@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DiStringMatchTest {
+
     @Test
     public void test1() {
         final DiStringMatch solution = new DiStringMatch();

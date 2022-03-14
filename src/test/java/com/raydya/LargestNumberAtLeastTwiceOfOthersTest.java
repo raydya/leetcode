@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LargestNumberAtLeastTwiceOfOthersTest {
+
     @Test
     public void test1() {
         final LargestNumberAtLeastTwiceOfOthers solution = new LargestNumberAtLeastTwiceOfOthers();

@@ -1,12 +1,12 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class BinaryTreeZigzagLevelOrderTraversalTest {
+
     @Test
     public void test1() {
         TreeNode n4 = new TreeNode(7);

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CountOddNumbersInAnIntervalRangeTest {
+
     @Test
     public void test1() {
         final CountOddNumbersInAnIntervalRange solution = new CountOddNumbersInAnIntervalRange();

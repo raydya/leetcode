@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class IntersectionOfTwoArraysIITest {
+
     @Test
     public void test1() {
         final IntersectionOfTwoArraysII solution = new IntersectionOfTwoArraysII();

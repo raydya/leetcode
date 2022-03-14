@@ -1,10 +1,12 @@
 package com.raydya;
 
 public class XiaoZhangShuaTiJiHua {
+
     public int minTime(int[] time, int m) {
         int len = time.length, lt = Integer.MAX_VALUE, rt = 0, mid, res = 0;
-        if (m >= len)
+        if (m >= len) {
             return 0;
+        }
         for (int i = 0; i < len; i++) {
             lt = Math.min(lt, time[i]);
             rt += time[i];
@@ -31,7 +33,9 @@ public class XiaoZhangShuaTiJiHua {
                 maxVal = sum = time[i];
             }
             if (cnt > m) // 当划分的子数组个数超过m时，直接返回true
+            {
                 return true;
+            }
         }
         return false; // 找到一种可能的分割方案
     }

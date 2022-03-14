@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaximumNestingDepthOfTheParenthesesTest {
+
     @Test
     public void test1() {
         final MaximumNestingDepthOfTheParentheses solution = new MaximumNestingDepthOfTheParentheses();

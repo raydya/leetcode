@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class PowerOfThree {
+
     public boolean isPowerOfThree(int n) {
         if (n < 1) {
             return false;

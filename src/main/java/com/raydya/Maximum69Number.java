@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class Maximum69Number {
+
     public int maximum69Number(int num) {
         final String s = String.valueOf(num);
         final char[] chars = s.toCharArray();

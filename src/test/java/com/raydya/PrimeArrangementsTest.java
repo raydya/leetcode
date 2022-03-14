@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PrimeArrangementsTest {
+
     @Test
     public void test1() {
         final PrimeArrangements solution = new PrimeArrangements();

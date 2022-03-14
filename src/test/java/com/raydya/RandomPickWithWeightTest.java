@@ -3,6 +3,7 @@ package com.raydya;
 import org.junit.Test;
 
 public class RandomPickWithWeightTest {
+
     @Test
     public void test1() {
         final RandomPickWithWeight solution = new RandomPickWithWeight(new int[]{1});

@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class GameOfLife {
+
     public void gameOfLife(int[][] board) {
         final int[][] copy = Arrays.stream(board)
             .map(int[]::clone)
@@ -32,10 +33,16 @@ public class GameOfLife {
         int cnt = 0;
 
         for (int i = m - 1; i <= m + 1; i++) {
-            if (i < 0 || i >= k) continue;
+            if (i < 0 || i >= k) {
+                continue;
+            }
             for (int j = n - 1; j <= n + 1; j++) {
-                if (j < 0 || j >= h) continue;
-                if (i == m && j == n) continue;
+                if (j < 0 || j >= h) {
+                    continue;
+                }
+                if (i == m && j == n) {
+                    continue;
+                }
                 cnt += board[i][j];
             }
         }

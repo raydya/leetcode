@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class RansomNote {
+
     public boolean canConstruct(String ransomNote, String magazine) {
         int[] holder1 = new int[26];
 
@@ -8,7 +9,6 @@ public class RansomNote {
             final char c = magazine.charAt(i);
             holder1[c - 97]++;
         }
-
 
         int[] holder2 = new int[26];
 
@@ -18,7 +18,9 @@ public class RansomNote {
         }
 
         for (int i = 0; i < 26; i++) {
-            if (holder1[i] < holder2[i]) return false;
+            if (holder1[i] < holder2[i]) {
+                return false;
+            }
         }
 
         return true;

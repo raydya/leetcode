@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MinimumPathSumTest {
+
     @Test
     public void test1() {
         final MinimumPathSum solution = new MinimumPathSum();

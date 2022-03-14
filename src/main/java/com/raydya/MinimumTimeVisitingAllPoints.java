@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MinimumTimeVisitingAllPoints {
+
     public int minTimeToVisitAllPoints(int[][] points) {
         int t = 0;
         for (int i = 0; i < points.length - 1; i++) {

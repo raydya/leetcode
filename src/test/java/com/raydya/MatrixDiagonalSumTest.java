@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MatrixDiagonalSumTest {
+
     @Test
     public void test1() {
         final MatrixDiagonalSum solution = new MatrixDiagonalSum();

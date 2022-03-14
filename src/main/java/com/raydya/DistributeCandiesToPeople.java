@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DistributeCandiesToPeople {
+
     public int[] distributeCandies(int candies, int num_people) {
         final int[] ret = new int[num_people];
 

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class WaterBottlesTest {
+
     @Test
     public void test1() {
         final WaterBottles solution = new WaterBottles();

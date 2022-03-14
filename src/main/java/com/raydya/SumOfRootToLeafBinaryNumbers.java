@@ -3,10 +3,13 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class SumOfRootToLeafBinaryNumbers {
+
     private int sum = 0;
 
     public int sumRootToLeaf(TreeNode root) {
-        if (root == null) return sum;
+        if (root == null) {
+            return sum;
+        }
 
         recursive(root, 0);
 

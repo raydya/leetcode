@@ -1,7 +1,9 @@
 package com.raydya;
 
 public class ReverseVowelsOfAString {
-    private static final char[] VOWELS = new char[]{'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
+
+    private static final char[] VOWELS = new char[]{'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u',
+        'U'};
 
     public String reverseVowels(String s) {
         int l = 0;
@@ -33,7 +35,9 @@ public class ReverseVowelsOfAString {
 
     private boolean isVowel(char s) {
         for (final char vowel : VOWELS) {
-            if (s == vowel) return true;
+            if (s == vowel) {
+                return true;
+            }
         }
 
         return false;

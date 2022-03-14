@@ -1,12 +1,12 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class BinaryTreePathsTest {
+
     @Test
     public void test1() {
         final TreeNode n3 = new TreeNode(5);

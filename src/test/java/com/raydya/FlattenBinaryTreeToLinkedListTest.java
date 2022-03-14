@@ -2,13 +2,13 @@ package com.raydya;
 
 import com.raydya.data.type.TreeNode;
 import com.raydya.utils.TreeNodeUtil;
+import java.util.Arrays;
+import java.util.Collections;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class FlattenBinaryTreeToLinkedListTest {
+
     @Test
     public void test1() {
         final TreeNode root = TreeNodeUtil.build(Arrays.asList(1, 2, 5, 3, 4, null, 6));
@@ -53,7 +53,8 @@ public class FlattenBinaryTreeToLinkedListTest {
 
     @Test
     public void test4() {
-        final TreeNode root = TreeNodeUtil.build(Arrays.asList(4, 1, null, null, 2, null, null, null, null, null, 3));
+        final TreeNode root = TreeNodeUtil.build(
+            Arrays.asList(4, 1, null, null, 2, null, null, null, null, null, 3));
 
         final FlattenBinaryTreeToLinkedList solution = new FlattenBinaryTreeToLinkedList();
         solution.flatten(root);
@@ -69,7 +70,8 @@ public class FlattenBinaryTreeToLinkedListTest {
 
     @Test
     public void test5() {
-        final TreeNode root = TreeNodeUtil.build(Arrays.asList(7, -10, 2, -4, 3, -8, null, null, null, null, -1, 11));
+        final TreeNode root = TreeNodeUtil.build(
+            Arrays.asList(7, -10, 2, -4, 3, -8, null, null, null, null, -1, 11));
 
         final FlattenBinaryTreeToLinkedList solution = new FlattenBinaryTreeToLinkedList();
         solution.flatten(root);

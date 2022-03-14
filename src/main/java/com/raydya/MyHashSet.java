@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MyHashSet {
+
     private final Map<Integer, Boolean> map;
 
     /**

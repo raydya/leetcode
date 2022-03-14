@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SortIntegersByTheNumberOf1BitsTest {
+
     @Test
     public void test1() {
         final SortIntegersByTheNumberOf1Bits solution = new SortIntegersByTheNumberOf1Bits();

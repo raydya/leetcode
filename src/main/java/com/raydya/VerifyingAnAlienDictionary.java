@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class VerifyingAnAlienDictionary {
+
     private final Map<Character, Integer> orderMap = new HashMap<>();
 
     public boolean isAlienSorted(String[] words, String order) {
@@ -17,7 +18,9 @@ public class VerifyingAnAlienDictionary {
         for (int i = 1; i < words.length; i++) {
             final String w = words[i];
             final boolean sorted = isSorted(s, w);
-            if (!sorted) return false;
+            if (!sorted) {
+                return false;
+            }
             s = w;
         }
 
@@ -32,7 +35,9 @@ public class VerifyingAnAlienDictionary {
             final char c1 = pre.charAt(i);
             final char c2 = word.charAt(i);
 
-            if (c1 == c2) continue;
+            if (c1 == c2) {
+                continue;
+            }
 
             return orderMap.get(c1) < orderMap.get(c2);
         }

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RichestCustomerWealthTest {
+
     @Test
     public void test1() {
         final RichestCustomerWealth solution = new RichestCustomerWealth();

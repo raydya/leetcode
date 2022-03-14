@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MaximumProductSubarray {
+
     public int maxProduct(int[] nums) {
         int maxF = nums[0], minF = nums[0], ans = nums[0];
         int length = nums.length;

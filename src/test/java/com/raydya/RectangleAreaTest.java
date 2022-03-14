@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RectangleAreaTest {
+
     @Test
     public void test1() {
         final RectangleArea solution = new RectangleArea();

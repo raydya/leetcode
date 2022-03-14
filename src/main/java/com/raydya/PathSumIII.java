@@ -1,11 +1,11 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class PathSumIII {
+
     public int pathSum(TreeNode root, int sum) {
         // key是前缀和, value是大小为key的前缀和出现的次数
         Map<Integer, Integer> prefixSumCount = new HashMap<>();
@@ -15,7 +15,8 @@ public class PathSumIII {
         return recursionPathSum(root, prefixSumCount, sum, 0);
     }
 
-    private int recursionPathSum(TreeNode node, Map<Integer, Integer> prefixSumCount, int target, int currSum) {
+    private int recursionPathSum(TreeNode node, Map<Integer, Integer> prefixSumCount, int target,
+        int currSum) {
         // 1.递归终止条件
         if (node == null) {
             return 0;

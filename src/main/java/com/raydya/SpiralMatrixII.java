@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SpiralMatrixII {
+
     public int[][] generateMatrix(int n) {
         int[][] matrix = new int[n][n];
 

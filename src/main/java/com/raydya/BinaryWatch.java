@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryWatch {
+
     public List<String> readBinaryWatch(int num) {
         List<String> times = new ArrayList<>();
         for (int x = 0; x < 12; x++) {

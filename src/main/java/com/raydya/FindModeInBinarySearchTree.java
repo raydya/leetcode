@@ -1,13 +1,13 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 public class FindModeInBinarySearchTree {
+
     private final Map<Integer, Integer> map = new HashMap<>();
     private int mode = Integer.MIN_VALUE;
 
@@ -29,7 +29,9 @@ public class FindModeInBinarySearchTree {
     }
 
     private void recursion(TreeNode node) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         final int max = map.getOrDefault(node.val, 0) + 1;
         mode = Math.max(mode, max);

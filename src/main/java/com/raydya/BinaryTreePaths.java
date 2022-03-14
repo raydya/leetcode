@@ -1,7 +1,6 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +11,9 @@ public class BinaryTreePaths {
     }
 
     private List<String> binaryTreePath(String path, TreeNode node) {
-        if (node == null) return new ArrayList<>();
+        if (node == null) {
+            return new ArrayList<>();
+        }
 
         final String nPath = path.equals("") ? String.valueOf(node.val) : path + "->" + node.val;
         if (isChild(node)) {

@@ -1,18 +1,22 @@
 package com.raydya;
 
 import com.raydya.data.type.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class AverageOfLevelsInBinaryTree {
+
     public List<Double> averageOfLevels(TreeNode root) {
         final List<Double> ret = new ArrayList<>();
         ret.add((double) root.val);
 
         List<TreeNode> nodes = new ArrayList<>();
-        if (root.left != null) nodes.add(root.left);
-        if (root.right != null) nodes.add(root.right);
+        if (root.left != null) {
+            nodes.add(root.left);
+        }
+        if (root.right != null) {
+            nodes.add(root.right);
+        }
 
         while (!nodes.isEmpty()) {
             long sum = 0;

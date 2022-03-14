@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CountBinarySubstrings {
+
     public int countBinarySubstrings(String s) {
         List<Integer> counts = new ArrayList<>();
         int ptr = 0, n = s.length();

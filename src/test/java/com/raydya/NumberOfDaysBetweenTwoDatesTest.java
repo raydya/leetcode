@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NumberOfDaysBetweenTwoDatesTest {
+
     @Test
     public void test1() {
         final NumberOfDaysBetweenTwoDates solution = new NumberOfDaysBetweenTwoDates();

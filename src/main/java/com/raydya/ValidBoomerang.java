@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ValidBoomerang {
+
     public boolean isBoomerang(int[][] points) {
         final int[] a = points[0];
         final int[] b = points[1];

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MoveZeroesTest {
+
     @Test
     public void test1() {
         final int[] input = {0, 1, 0, 3, 12};

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CheckIfOneStringSwapCanMakeStringsEqualTest {
+
     @Test
     public void test1() {
         final CheckIfOneStringSwapCanMakeStringsEqual solution = new CheckIfOneStringSwapCanMakeStringsEqual();

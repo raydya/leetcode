@@ -5,8 +5,11 @@ import java.util.Map;
 import java.util.Set;
 
 public class TaskScheduler {
+
     public int leastInterval(char[] tasks, int n) {
-        if (n == 0) return tasks.length;
+        if (n == 0) {
+            return tasks.length;
+        }
 
         Map<Character, Integer> freq = new HashMap<>();
         // 最多的执行次数

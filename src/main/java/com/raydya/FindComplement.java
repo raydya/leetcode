@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindComplement {
+
     public int findComplement(int num) {
         final String s = Integer.toBinaryString(num);
         final char[] chars = new char[s.length()];

@@ -1,11 +1,14 @@
 package com.raydya;
 
 public class ReshapeTheMatrix {
+
     public int[][] matrixReshape(int[][] mat, int r, int c) {
         final int m = mat.length;
         final int n = mat[0].length;
 
-        if (m * n != r * c) return mat;
+        if (m * n != r * c) {
+            return mat;
+        }
 
         int[][] ret = new int[r][c];
         for (int i = 0; i < m; i++) {

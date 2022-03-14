@@ -6,8 +6,11 @@ import java.util.HashMap;
 import java.util.List;
 
 public class GroupAnagrams {
+
     public List<List<String>> groupAnagrams(String[] strs) {
-        if (strs.length == 0) return new ArrayList<>();
+        if (strs.length == 0) {
+            return new ArrayList<>();
+        }
 
         final HashMap<String, List<String>> holder = new HashMap<>();
         for (final String str : strs) {

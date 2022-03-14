@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class ValidateBinarySearchTree {
+
     public boolean isValidBST(TreeNode root) {
         return validate(root, null, null);
     }

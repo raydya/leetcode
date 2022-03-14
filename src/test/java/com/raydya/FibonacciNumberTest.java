@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FibonacciNumberTest {
+
     @Test
     public void test1() {
         final FibonacciNumber solution = new FibonacciNumber();

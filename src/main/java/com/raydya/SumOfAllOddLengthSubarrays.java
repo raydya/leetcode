@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SumOfAllOddLengthSubarrays {
+
     public int sumOddLengthSubarrays(int[] arr) {
         int ret = 0;
         for (int i = 1; i <= arr.length; i += 2) {

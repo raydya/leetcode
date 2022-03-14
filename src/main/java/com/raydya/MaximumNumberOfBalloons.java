@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MaximumNumberOfBalloons {
+
     public int maxNumberOfBalloons(String text) {
         int[] alphabets = new int[26];
 

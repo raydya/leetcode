@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DayOfTheYear {
+
     public int dayOfYear(String date) {
         final String[] s = date.split("-");
         final int year = Integer.parseInt(s[0]);

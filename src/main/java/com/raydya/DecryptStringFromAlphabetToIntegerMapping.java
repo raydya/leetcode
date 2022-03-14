@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DecryptStringFromAlphabetToIntegerMapping {
+
     private final Map<String, String> map = new HashMap<String, String>() {{
         put("1", "a");
         put("2", "b");

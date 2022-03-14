@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class EvaluateReversePolishNotationTest {
+
     @Test
     public void test1() {
         final EvaluateReversePolishNotation solution = new EvaluateReversePolishNotation();
@@ -23,7 +24,8 @@ public class EvaluateReversePolishNotationTest {
     @Test
     public void test3() {
         final EvaluateReversePolishNotation solution = new EvaluateReversePolishNotation();
-        final int output = solution.evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"});
+        final int output = solution.evalRPN(
+            new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"});
 
         Assert.assertEquals(22, output);
     }

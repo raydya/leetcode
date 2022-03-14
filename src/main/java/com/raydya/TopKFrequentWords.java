@@ -7,18 +7,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class TopKFrequentWords {
-    public static class Word {
-        public String word;
-        public int count;
-
-        public String getWord() {
-            return word;
-        }
-
-        public int getCount() {
-            return count;
-        }
-    }
 
     public List<String> topKFrequent(String[] words, int k) {
         Map<String, Integer> map = new HashMap<>();
@@ -28,13 +16,13 @@ public class TopKFrequentWords {
         }
 
         return map.entrySet().stream().map(entry -> {
-            final String key = entry.getKey();
-            final Integer value = entry.getValue();
-            final Word word = new Word();
-            word.word = key;
-            word.count = value;
-            return word;
-        })
+                final String key = entry.getKey();
+                final Integer value = entry.getValue();
+                final Word word = new Word();
+                word.word = key;
+                word.count = value;
+                return word;
+            })
             .sorted(
                 Comparator.comparing(
                     Word::getCount,
@@ -47,5 +35,19 @@ public class TopKFrequentWords {
             .limit(k)
             .map(Word::getWord)
             .collect(Collectors.toList());
+    }
+
+    public static class Word {
+
+        public String word;
+        public int count;
+
+        public String getWord() {
+            return word;
+        }
+
+        public int getCount() {
+            return count;
+        }
     }
 }

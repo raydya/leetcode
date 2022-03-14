@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RandomizedSetTest {
+
     @Test
     public void test1() {
         // 初始化一个空的集合。

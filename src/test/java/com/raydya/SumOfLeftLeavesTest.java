@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SumOfLeftLeavesTest {
+
     @Test
     public void test1() {
         final TreeNode n4 = new TreeNode(7);

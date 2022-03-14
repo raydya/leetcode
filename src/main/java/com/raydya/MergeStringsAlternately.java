@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MergeStringsAlternately {
+
     public String mergeAlternately(String word1, String word2) {
         int p1 = 0;
         int p2 = 0;

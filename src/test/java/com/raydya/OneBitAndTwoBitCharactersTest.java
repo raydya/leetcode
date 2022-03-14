@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class OneBitAndTwoBitCharactersTest {
+
     @Test
     public void test1() {
         final OneBitAndTwoBitCharacters solution = new OneBitAndTwoBitCharacters();

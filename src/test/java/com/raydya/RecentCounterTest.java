@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RecentCounterTest {
+
     @Test
     public void test1() {
         final RecentCounter recentCounter = new RecentCounter();

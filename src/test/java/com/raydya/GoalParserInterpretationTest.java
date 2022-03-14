@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GoalParserInterpretationTest {
+
     @Test
     public void test1() {
         final GoalParserInterpretation solution = new GoalParserInterpretation();

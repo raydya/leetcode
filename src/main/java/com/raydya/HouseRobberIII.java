@@ -3,6 +3,7 @@ package com.raydya;
 import com.raydya.data.type.TreeNode;
 
 public class HouseRobberIII {
+
     public int rob(TreeNode root) {
         int[] rootStatus = dfs(root);
         return Math.max(rootStatus[0], rootStatus[1]);

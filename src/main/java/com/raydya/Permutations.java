@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Permutations {
+
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         backtrack(list, new ArrayList<>(), nums);
@@ -15,7 +16,9 @@ public class Permutations {
             list.add(new ArrayList<>(tempList));
         } else {
             for (int i = 0; i < nums.length; i++) {
-                if (tempList.contains(nums[i])) continue; // element already exists, skip
+                if (tempList.contains(nums[i])) {
+                    continue; // element already exists, skip
+                }
                 tempList.add(nums[i]);
                 backtrack(list, tempList, nums);
                 tempList.remove(tempList.size() - 1);

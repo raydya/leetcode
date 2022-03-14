@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyHashSetTest {
+
     @Test
     public void test1() {
         final MyHashSet myHashSet = new MyHashSet();

@@ -1,16 +1,17 @@
 package com.raydya;
 
+import java.util.Comparator;
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Comparator;
-import java.util.List;
-
 public class GroupAnagramsTest {
+
     @Test
     public void test1() {
         final GroupAnagrams solution = new GroupAnagrams();
-        final List<List<String>> anagrams = solution.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
+        final List<List<String>> anagrams = solution.groupAnagrams(
+            new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
 
         anagrams.forEach(anagram -> anagram.sort(Comparator.naturalOrder()));
         anagrams.sort(Comparator.comparingInt(List::size));

@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindWinnerOnATicTacToeGameTest {
+
     @Test
     public void test1() {
         final FindWinnerOnATicTacToeGame solution = new FindWinnerOnATicTacToeGame();
-        final String output = solution.tictactoe(new int[][]{{0, 0}, {2, 0}, {1, 1}, {2, 1}, {2, 2}});
+        final String output = solution.tictactoe(
+            new int[][]{{0, 0}, {2, 0}, {1, 1}, {2, 1}, {2, 2}});
 
         Assert.assertEquals("A", output);
     }
@@ -15,7 +17,8 @@ public class FindWinnerOnATicTacToeGameTest {
     @Test
     public void test2() {
         final FindWinnerOnATicTacToeGame solution = new FindWinnerOnATicTacToeGame();
-        final String output = solution.tictactoe(new int[][]{{0, 0}, {1, 1}, {0, 1}, {0, 2}, {1, 0}, {2, 0}});
+        final String output = solution.tictactoe(
+            new int[][]{{0, 0}, {1, 1}, {0, 1}, {0, 2}, {1, 0}, {2, 0}});
 
         Assert.assertEquals("B", output);
     }
@@ -23,7 +26,8 @@ public class FindWinnerOnATicTacToeGameTest {
     @Test
     public void test3() {
         final FindWinnerOnATicTacToeGame solution = new FindWinnerOnATicTacToeGame();
-        final String output = solution.tictactoe(new int[][]{{0, 0}, {1, 1}, {2, 0}, {1, 0}, {1, 2}, {2, 1}, {0, 1}, {0, 2}, {2, 2}});
+        final String output = solution.tictactoe(
+            new int[][]{{0, 0}, {1, 1}, {2, 0}, {1, 0}, {1, 2}, {2, 1}, {0, 1}, {0, 2}, {2, 2}});
 
         Assert.assertEquals("Draw", output);
     }

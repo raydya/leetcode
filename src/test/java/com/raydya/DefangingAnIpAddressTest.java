@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DefangingAnIpAddressTest {
+
     @Test
     public void test1() {
         final DefangingAnIpAddress solution = new DefangingAnIpAddress();

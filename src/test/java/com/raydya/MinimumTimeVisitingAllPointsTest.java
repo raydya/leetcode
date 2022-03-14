@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MinimumTimeVisitingAllPointsTest {
+
     @Test
     public void test1() {
         final MinimumTimeVisitingAllPoints solution = new MinimumTimeVisitingAllPoints();

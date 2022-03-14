@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DeepDarkFractionTest {
+
     @Test
     public void test1() {
         final DeepDarkFraction solution = new DeepDarkFraction();

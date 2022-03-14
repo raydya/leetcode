@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindNearestPointThatHasTheSameXOrYCoordinate {
+
     public int nearestValidPoint(int x, int y, int[][] points) {
         int mManhattanDistance = Integer.MAX_VALUE;
         int index = -1;

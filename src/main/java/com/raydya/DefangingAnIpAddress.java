@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class DefangingAnIpAddress {
+
     public String defangIPaddr(String address) {
         final char[] chars = new char[address.length() + 6];
         int j = 0;

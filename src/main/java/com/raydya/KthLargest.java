@@ -3,9 +3,10 @@ package com.raydya;
 import java.util.Arrays;
 
 public class KthLargest {
+
+    private final int kth;
     private int[] oNums;
     private int i;
-    private final int kth;
 
     public KthLargest(int k, int[] nums) {
         Arrays.sort(nums);

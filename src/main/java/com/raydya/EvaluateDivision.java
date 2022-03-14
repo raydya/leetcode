@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 public class EvaluateDivision {
-    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+
+    public double[] calcEquation(List<List<String>> equations, double[] values,
+        List<List<String>> queries) {
         int nvars = 0;
         Map<String, Integer> variables = new HashMap<>();
 
@@ -24,7 +26,8 @@ public class EvaluateDivision {
             Arrays.fill(graph[i], -1.0);
         }
         for (int i = 0; i < n; i++) {
-            int va = variables.get(equations.get(i).get(0)), vb = variables.get(equations.get(i).get(1));
+            int va = variables.get(equations.get(i).get(0)), vb = variables.get(
+                equations.get(i).get(1));
             graph[va][vb] = values[i];
             graph[vb][va] = 1.0 / values[i];
         }

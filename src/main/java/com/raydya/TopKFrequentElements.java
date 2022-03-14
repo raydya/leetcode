@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 public class TopKFrequentElements {
+
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
 
@@ -21,7 +22,6 @@ public class TopKFrequentElements {
                 Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                     (s1, s2) -> s1, LinkedHashMap::new)
             );
-
 
         final int[] res = new int[k];
 

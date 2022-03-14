@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class AddTwoNumbersTest {
+
     @Test
     public void test() {
         final ListNode a3 = new ListNode(3);

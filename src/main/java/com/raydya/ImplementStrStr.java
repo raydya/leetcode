@@ -1,10 +1,13 @@
 package com.raydya;
 
 public class ImplementStrStr {
+
     // KMP
     public int strStr(String haystack, String needle) {
         final int length = needle.length();
-        if (length == 0) return 0;
+        if (length == 0) {
+            return 0;
+        }
 
         // needle current index
         int nc = 0;
@@ -16,14 +19,18 @@ public class ImplementStrStr {
 
         // loop haystack
         for (int i = 0; i < haystack.length(); i++) {
-            if (i + length > haystack.length() || nc == length) break;
+            if (i + length > haystack.length() || nc == length) {
+                break;
+            }
 
             final char c = haystack.charAt(i);
 
             // current haystack char equals to first needle char
             if (c == first) {
                 // if haystack index is -1, set it as current loop index
-                if (hsl == -1) hsl = i;
+                if (hsl == -1) {
+                    hsl = i;
+                }
                 // need current index + 1
                 nc++;
                 // loop for next haystack chars and length equals to needle length

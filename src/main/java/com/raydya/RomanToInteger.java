@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class RomanToInteger {
+
     public int romanToInt(String s) {
         final HashMap<String, Integer> map = new HashMap<String, Integer>() {{
             put("I", 1);

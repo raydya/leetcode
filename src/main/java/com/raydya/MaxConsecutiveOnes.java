@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MaxConsecutiveOnes {
+
     public int findMaxConsecutiveOnes(int[] nums) {
         int[] h = new int[nums.length];
         h[0] = nums[0];

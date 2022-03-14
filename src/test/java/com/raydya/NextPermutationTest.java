@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NextPermutationTest {
+
     @Test
     public void test1() {
         final int[] input = {1, 2, 3};

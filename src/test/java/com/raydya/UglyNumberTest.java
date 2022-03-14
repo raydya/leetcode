@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UglyNumberTest {
+
     @Test
     public void test1() {
         final UglyNumber solution = new UglyNumber();

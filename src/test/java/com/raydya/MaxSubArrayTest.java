@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaxSubArrayTest {
+
     @Test
     public void test1() {
         int[] input = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};

@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RemoveNthNodeFromEndOfListTest {
+
     @Test
     public void test1() {
         final ListNode n4 = new ListNode(5);

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HowManyNumbersAreSmallerThanTheCurrentNumberTest {
+
     @Test
     public void test1() {
         final HowManyNumbersAreSmallerThanTheCurrentNumber solution = new HowManyNumbersAreSmallerThanTheCurrentNumber();

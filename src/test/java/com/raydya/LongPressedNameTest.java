@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LongPressedNameTest {
+
     @Test
     public void test1() {
         final LongPressedName solution = new LongPressedName();

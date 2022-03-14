@@ -19,9 +19,9 @@ public class MajorityElement {
         int candidate = nums[0];
         int count = 1;
         for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == candidate)
+            if (nums[i] == candidate) {
                 count += 1;
-            else {
+            } else {
                 count -= 1;
                 if (count == 0) {
                     candidate = nums[i];

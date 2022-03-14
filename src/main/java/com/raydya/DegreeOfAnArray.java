@@ -8,6 +8,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class DegreeOfAnArray {
+
     public int findShortestSubArray(int[] nums) {
         int maxCount = 0;
         Map<Integer, List<Integer>> map = new HashMap<>();

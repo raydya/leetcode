@@ -3,8 +3,11 @@ package com.raydya;
 import java.util.Arrays;
 
 public class LastStoneWeight {
+
     public int lastStoneWeight(int[] stones) {
-        if (stones.length == 1) return stones[0];
+        if (stones.length == 1) {
+            return stones[0];
+        }
 
         final int l = stones.length;
         for (int i = 0; i < l; i++) {

@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SortArrayByParity {
+
     public int[] sortArrayByParity(int[] nums) {
         int[] ret = new int[nums.length];
         int s = 0;

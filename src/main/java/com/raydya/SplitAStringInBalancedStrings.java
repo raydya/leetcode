@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SplitAStringInBalancedStrings {
+
     public int balancedStringSplit(String s) {
         int cnt = 0;
         final int[] h = new int[2];

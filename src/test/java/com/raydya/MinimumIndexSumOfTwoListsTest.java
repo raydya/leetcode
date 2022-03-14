@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MinimumIndexSumOfTwoListsTest {
+
     @Test
     public void test1() {
         final String[] andy = {"Shogun", "Tapioca Express", "Burger King", "KFC"};
-        final String[] doris = {"Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"};
+        final String[] doris = {"Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse",
+            "Shogun"};
 
         final MinimumIndexSumOfTwoLists solution = new MinimumIndexSumOfTwoLists();
         final String[] output = solution.findRestaurant(andy, doris);

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ProductOfArrayExceptSelfTest {
+
     @Test
     public void test1() {
         final ProductOfArrayExceptSelf solution = new ProductOfArrayExceptSelf();

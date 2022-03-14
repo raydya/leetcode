@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class RichestCustomerWealth {
+
     public int maximumWealth(int[][] accounts) {
         int ret = Integer.MIN_VALUE;
         for (final int[] account : accounts) {

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SurfaceAreaOf3DShapesTest {
+
     @Test
     public void test1() {
         final SurfaceAreaOf3DShapes solution = new SurfaceAreaOf3DShapes();

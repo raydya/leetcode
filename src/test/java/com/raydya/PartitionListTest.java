@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PartitionListTest {
+
     @Test
     public void test1() {
         final ListNode n5 = new ListNode(2);

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SortIntegersByTheNumberOf1Bits {
+
     public int[] sortByBits(int[] arr) {
         int[] bit = new int[10001];
         List<Integer> list = new ArrayList<>();

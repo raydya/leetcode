@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MinimumAbsoluteDifference {
+
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         Arrays.sort(arr);
 

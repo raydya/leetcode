@@ -1,15 +1,16 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class CombinationSumTest {
+
     @Test
     public void test1() {
         final CombinationSum solution = new CombinationSum();
-        final List<List<Integer>> combinationSum = solution.combinationSum(new int[]{2, 3, 6, 7}, 7);
+        final List<List<Integer>> combinationSum = solution.combinationSum(new int[]{2, 3, 6, 7},
+            7);
         final List<Integer> one = combinationSum.get(0);
         Assert.assertArrayEquals(
             new Integer[]{2, 2, 3},

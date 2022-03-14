@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.HashMap;
 
 public class ExcelSheetColumnNumber {
+
     private static final HashMap<String, Integer> MAP = new HashMap<String, Integer>() {
         {
             put("A", 1);

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PowTest {
+
     @Test
     public void test1() {
         final Pow solution = new Pow();

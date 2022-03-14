@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindTheDifferenceTest {
+
     @Test
     public void test1() {
         final FindTheDifference solution = new FindTheDifference();

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class PathInZigzagLabelledBinaryTree {
+
     public List<Integer> pathInZigZagTree(int label) {
         int row = 1, rowStart = 1;
         while (rowStart * 2 <= label) {

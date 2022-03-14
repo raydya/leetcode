@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LongestPalindromicSubstringTest {
+
     @Test
     public void test1() {
         final LongestPalindromicSubstring solution = new LongestPalindromicSubstring();

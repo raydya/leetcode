@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CourseScheduleTest {
+
     @Test
     public void test1() {
         final CourseSchedule solution = new CourseSchedule();
@@ -20,7 +21,8 @@ public class CourseScheduleTest {
 
     @Test
     public void test3() {
-        final int[][] prerequisites = {{0, 10}, {3, 18}, {5, 5}, {6, 11}, {11, 14}, {13, 1}, {15, 1}, {17, 4}};
+        final int[][] prerequisites = {{0, 10}, {3, 18}, {5, 5}, {6, 11}, {11, 14}, {13, 1},
+            {15, 1}, {17, 4}};
 
         final CourseSchedule solution = new CourseSchedule();
         final boolean canFinish = solution.canFinish(20, prerequisites);
@@ -37,7 +39,8 @@ public class CourseScheduleTest {
     @Test
     public void test5() {
         final CourseSchedule solution = new CourseSchedule();
-        final boolean canFinish = solution.canFinish(5, new int[][]{{1, 4}, {2, 4}, {3, 1}, {3, 2}});
+        final boolean canFinish = solution.canFinish(5,
+            new int[][]{{1, 4}, {2, 4}, {3, 1}, {3, 2}});
         Assert.assertTrue(canFinish);
     }
 }

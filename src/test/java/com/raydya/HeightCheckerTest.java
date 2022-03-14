@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HeightCheckerTest {
+
     @Test
     public void test1() {
         final HeightChecker solution = new HeightChecker();

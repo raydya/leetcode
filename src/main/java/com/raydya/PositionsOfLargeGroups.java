@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PositionsOfLargeGroups {
+
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> ret = new ArrayList<>();
         char p = s.charAt(0);

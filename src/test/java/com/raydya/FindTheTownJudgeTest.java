@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindTheTownJudgeTest {
+
     @Test
     public void test1() {
         final FindTheTownJudge solution = new FindTheTownJudge();
@@ -39,7 +40,8 @@ public class FindTheTownJudgeTest {
     @Test
     public void test5() {
         final FindTheTownJudge solution = new FindTheTownJudge();
-        final int output = solution.findJudge(4, new int[][]{{1, 3}, {1, 4}, {2, 3}, {2, 4}, {4, 3}});
+        final int output = solution.findJudge(4,
+            new int[][]{{1, 3}, {1, 4}, {2, 3}, {2, 4}, {4, 3}});
 
         Assert.assertEquals(3, output);
     }

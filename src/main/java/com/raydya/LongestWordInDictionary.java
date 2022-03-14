@@ -5,9 +5,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class LongestWordInDictionary {
+
     public String longestWord(String[] words) {
         Set<String> wordset = new HashSet<>();
-        for (String word : words) wordset.add(word);
+        for (String word : words) {
+            wordset.add(word);
+        }
         Arrays.sort(words, (a, b) -> a.length() == b.length()
             ? a.compareTo(b) : b.length() - a.length());
         for (String word : words) {
@@ -18,7 +21,9 @@ public class LongestWordInDictionary {
                     break;
                 }
             }
-            if (good) return word;
+            if (good) {
+                return word;
+            }
         }
 
         return "";

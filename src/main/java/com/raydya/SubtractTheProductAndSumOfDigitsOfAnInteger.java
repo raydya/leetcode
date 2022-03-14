@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class SubtractTheProductAndSumOfDigitsOfAnInteger {
+
     public int subtractProductAndSum(int n) {
         final String s = String.valueOf(n);
 

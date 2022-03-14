@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class ValidPalindrome {
+
     public boolean isPalindrome(String s) {
         if (s.isEmpty()) {
             return true;

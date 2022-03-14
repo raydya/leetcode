@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FairCandySwap {
+
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int at = 0;
         int bt = 0;

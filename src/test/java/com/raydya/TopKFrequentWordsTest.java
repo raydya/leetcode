@@ -1,11 +1,11 @@
 package com.raydya;
 
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
 public class TopKFrequentWordsTest {
+
     @Test
     public void test1() {
         final String[] words = {"i", "love", "leetcode", "i", "love", "coding"};
@@ -18,7 +18,8 @@ public class TopKFrequentWordsTest {
 
     @Test
     public void test2() {
-        final String[] words = {"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"};
+        final String[] words = {"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is",
+            "is"};
 
         final TopKFrequentWords solution = new TopKFrequentWords();
         final List<String> output = solution.topKFrequent(words, 4);

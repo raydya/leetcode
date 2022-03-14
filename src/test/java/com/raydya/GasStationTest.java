@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GasStationTest {
+
     @Test
     public void test1() {
         final GasStation solution = new GasStation();
@@ -39,7 +40,8 @@ public class GasStationTest {
     @Test
     public void test5() {
         final GasStation solution = new GasStation();
-        final int output = solution.canComplete(new int[]{4, 5, 2, 6, 5, 3}, new int[]{3, 2, 7, 3, 2, 9});
+        final int output = solution.canComplete(new int[]{4, 5, 2, 6, 5, 3},
+            new int[]{3, 2, 7, 3, 2, 9});
 
         Assert.assertEquals(-1, output);
     }
@@ -55,7 +57,8 @@ public class GasStationTest {
     @Test
     public void test7() {
         final GasStation solution = new GasStation();
-        final int output = solution.canComplete(new int[]{1, 2, 3, 4, 5, 5, 70}, new int[]{2, 3, 4, 3, 9, 6, 2});
+        final int output = solution.canComplete(new int[]{1, 2, 3, 4, 5, 5, 70},
+            new int[]{2, 3, 4, 3, 9, 6, 2});
 
         Assert.assertEquals(6, output);
     }

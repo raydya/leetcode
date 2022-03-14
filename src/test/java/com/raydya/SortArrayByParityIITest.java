@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SortArrayByParityIITest {
+
     @Test
     public void test1() {
         final SortArrayByParityII solution = new SortArrayByParityII();

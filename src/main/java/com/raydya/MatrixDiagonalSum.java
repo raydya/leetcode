@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class MatrixDiagonalSum {
+
     public int diagonalSum(int[][] mat) {
         final int l = mat.length;
         final boolean even = l % 2 == 0;

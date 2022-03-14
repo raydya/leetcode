@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GreatestCommonDivisorOfStringsTest {
+
     @Test
     public void test1() {
         final GreatestCommonDivisorOfStrings solution = new GreatestCommonDivisorOfStrings();

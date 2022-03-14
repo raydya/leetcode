@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CourseScheduleIITest {
+
     @Test
     public void test1() {
         final CourseScheduleII solution = new CourseScheduleII();

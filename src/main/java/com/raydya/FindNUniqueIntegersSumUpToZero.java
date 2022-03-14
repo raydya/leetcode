@@ -1,6 +1,7 @@
 package com.raydya;
 
 public class FindNUniqueIntegersSumUpToZero {
+
     public int[] sumZero(int n) {
         final int[] ret = new int[n];
         int s = n / 2;

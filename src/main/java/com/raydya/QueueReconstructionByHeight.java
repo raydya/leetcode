@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class QueueReconstructionByHeight {
+
     public int[][] reconstructQueue(int[][] people) {
         Arrays.sort(people, (person1, person2) -> {
             if (person1[0] != person2[0]) {

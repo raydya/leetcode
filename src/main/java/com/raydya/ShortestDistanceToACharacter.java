@@ -3,6 +3,7 @@ package com.raydya;
 import java.util.Arrays;
 
 public class ShortestDistanceToACharacter {
+
     public int[] shortestToChar(String s, char c) {
         final int[] ret = new int[s.length()];
         Arrays.fill(ret, Integer.MAX_VALUE);
@@ -15,14 +16,18 @@ public class ShortestDistanceToACharacter {
                 int cnt = 1;
                 ret[i] = 0;
                 for (int j = i - 1; j >= 0; j--) {
-                    if (j == pre) break;
+                    if (j == pre) {
+                        break;
+                    }
                     ret[j] = Math.min(ret[j], cnt);
                     cnt++;
                 }
 
                 int cnt2 = 1;
                 for (int j = i + 1; j < s.length(); j++) {
-                    if (s.charAt(j) == c) break;
+                    if (s.charAt(j) == c) {
+                        break;
+                    }
                     ret[j] = Math.min(ret[j], cnt2);
                     cnt2++;
                 }

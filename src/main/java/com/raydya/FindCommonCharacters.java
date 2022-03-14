@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FindCommonCharacters {
+
     public List<String> commonChars(String[] words) {
         int[] minfreq = new int[26];
         Arrays.fill(minfreq, Integer.MAX_VALUE);

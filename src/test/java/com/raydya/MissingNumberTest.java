@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MissingNumberTest {
+
     @Test
     public void test1() {
         final MissingNumber solution = new MissingNumber();

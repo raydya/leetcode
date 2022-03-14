@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StoneGameTest {
+
     @Test
     public void test1() {
         final StoneGame solution = new StoneGame();

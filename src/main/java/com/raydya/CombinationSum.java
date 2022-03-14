@@ -4,14 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CombinationSum {
+
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         calc(candidates, new ArrayList<>(), 0, target, res);
         return res;
     }
 
-    private void calc(int[] candidates, List<Integer> path, int index, int target, List<List<Integer>> res) {
-        if (target < 0) return;
+    private void calc(int[] candidates, List<Integer> path, int index, int target,
+        List<List<Integer>> res) {
+        if (target < 0) {
+            return;
+        }
         if (target == 0) {
             res.add(new ArrayList<>(path));
             return;

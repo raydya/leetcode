@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LastStoneWeightTest {
+
     @Test
     public void test1() {
         final LastStoneWeight solution = new LastStoneWeight();

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindNUniqueIntegersSumUpToZeroTest {
+
     @Test
     public void test1() {
         final FindNUniqueIntegersSumUpToZero solution = new FindNUniqueIntegersSumUpToZero();
