@@ -1,6 +1,6 @@
 package com.raydya;
 
-import com.raydya.EthansMath.CountLineBetweenDots;
+import com.raydya.ethan.math.CountLineBetweenDots;
 import org.junit.Assert;
 import org.junit.Test;
 

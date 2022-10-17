@@ -1,4 +1,4 @@
-package com.raydya.EthansMath;
+package com.raydya.ethan.math;
 
 public class CountLineBetweenDots {
 

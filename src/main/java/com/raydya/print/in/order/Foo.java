@@ -1,4 +1,4 @@
-package com.raydya.PrintInOrder;
+package com.raydya.print.in.order;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
