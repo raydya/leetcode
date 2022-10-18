@@ -15,4 +15,13 @@ public class NumberOfWheat {
         return sum;
     }
 
+    /**
+     * 数学归纳法
+     * <p>
+     * 2^n - 1
+     */
+    public long mathInduction(int grid) {
+        return (long) (Math.pow(2, grid) - 1);
+    }
+
 }
