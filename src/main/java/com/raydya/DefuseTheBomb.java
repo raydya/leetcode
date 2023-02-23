@@ -21,9 +21,10 @@ public class DefuseTheBomb {
                 r[i] = s;
             }
         } else {
+            final int absK = Math.abs(k);
             for (int i = 0; i < l; i++) {
                 int s = 0;
-                int p = Math.abs(k);
+                int p = absK;
                 while (p > 0) {
                     final int f = i - p;
                     int j = f < 0 ? f + l : f;
