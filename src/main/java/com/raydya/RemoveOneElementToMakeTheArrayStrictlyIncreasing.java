@@ -6,12 +6,8 @@ public class RemoveOneElementToMakeTheArrayStrictlyIncreasing {
         final int[][] h = new int[nums.length][nums.length - 1];
         for (int i = 0; i < nums.length; i++) {
             int k = 0;
-            for (int j = 0; j < i; j++) {
-                h[i][k] = nums[j];
-                k++;
-            }
 
-            for (int j = i; j < nums.length; j++) {
+            for (int j = 0; j < nums.length; j++) {
                 if (i == j) {
                     continue;
                 }
