@@ -10,24 +10,17 @@ public class MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts {
         Arrays.sort(horizontalCuts);
         Arrays.sort(verticalCuts);
 
-        final long[] hs = new long[horizontalCuts.length + 1];
-        hs[0] = horizontalCuts[0];
-        hs[hs.length - 1] = h - horizontalCuts[horizontalCuts.length - 1];
+        long mh = Math.max(horizontalCuts[0], h - horizontalCuts[horizontalCuts.length - 1]);
         for (int i = 1; i < horizontalCuts.length; i++) {
-            hs[i] = horizontalCuts[i] - horizontalCuts[i - 1];
+            mh = Math.max(mh, horizontalCuts[i] - horizontalCuts[i - 1]);
         }
 
-        final long[] vs = new long[verticalCuts.length + 1];
-        vs[0] = verticalCuts[0];
-        vs[vs.length - 1] = w - verticalCuts[verticalCuts.length - 1];
+        long mv = Math.max(verticalCuts[0], w - verticalCuts[verticalCuts.length - 1]);
         for (int i = 1; i < verticalCuts.length; i++) {
-            vs[i] = verticalCuts[i] - verticalCuts[i - 1];
+            mv = Math.max(mv, verticalCuts[i] - verticalCuts[i - 1]);
         }
 
-        Arrays.sort(hs);
-        Arrays.sort(vs);
-
-        return (int) (hs[hs.length - 1] * vs[vs.length - 1] % MOD);
+        return (int) (mh * mv % MOD);
     }
 
 }
