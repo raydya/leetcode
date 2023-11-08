@@ -26,11 +26,7 @@ public class CountTheNumberOfVowelStringsInRange {
         final char f = word.charAt(0);
         final char e = word.charAt(word.length() - 1);
 
-        if (VOWELS.contains(f) && VOWELS.contains(e)) {
-            return true;
-        }
-
-        return false;
+        return VOWELS.contains(f) && VOWELS.contains(e);
     }
 
 }
