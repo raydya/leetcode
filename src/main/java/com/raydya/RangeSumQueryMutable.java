@@ -4,22 +4,26 @@ public class RangeSumQueryMutable {
 
     public static class NumArray {
 
-        private final int[] nums;
+        private final int[] origin;
+        private final int[] holder;
 
         public NumArray(int[] nums) {
-            this.nums = nums;
+            this.origin = nums;
+            this.holder = new int[origin.length + 1];
+            for (int i = 0; i < origin.length; i++) {
+                holder[i + 1] = holder[i] + origin[i];
+            }
         }
 
         public void update(int index, int val) {
-            nums[index] = val;
+            origin[index] = val;
+            for (int i = index; i < origin.length; i++) {
+                holder[i + 1] = holder[i] + origin[i];
+            }
         }
 
         public int sumRange(int left, int right) {
-            int sum = 0;
-            for (int i = left; i <= right; i++) {
-                sum += nums[i];
-            }
-            return sum;
+            return holder[right + 1] - holder[left];
         }
     }
 
