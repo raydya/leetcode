@@ -6,36 +6,34 @@ import java.util.List;
 
 public class TreeNodeUtil {
 
-    public static TreeNode build(List<Integer> vals) {
-        if (vals == null || vals.size() == 0) {
+    public static TreeNode build(List<Integer> values) {
+        if (values == null || values.size() == 0) {
             return null;
         }
-        final Integer val = vals.get(0);
-        if (val == null) {
-            return null;
-        }
-        final TreeNode root = new TreeNode(val);
-        root.left = buildSubTree(vals, 1, 1, 1);
-        root.right = buildSubTree(vals, 2, 1, 1);
+        TreeNode root = createTree(values, 0);
         return root;
     }
 
-    private static TreeNode buildSubTree(List<Integer> vals, int index, int level, int levelStart) {
-        if (index >= vals.size()) {
+    public static TreeNode createTree(List<Integer> values, int index) {
+        if (index >= values.size()) {
             return null;
         }
-        final Integer val = vals.get(index);
-        if (val == null) {
+
+        Integer value = values.get(index);
+        if (value == null) {
             return null;
         }
-        final TreeNode node = new TreeNode(val);
-        final int capacity = (int) Math.pow(2, level);
-        final int offset = index - levelStart;
-        final int nextLevelStart = levelStart + capacity;
-        final int leftIndex = offset * 2 + nextLevelStart;
-        final int rightIndex = offset * 2 + 1 + nextLevelStart;
-        node.left = buildSubTree(vals, leftIndex, level + 1, nextLevelStart);
-        node.right = buildSubTree(vals, rightIndex, level + 1, nextLevelStart);
-        return node;
+
+        TreeNode tree = new TreeNode(value);
+
+        // tree(index).left = 2 * index + 1
+        tree.left = createTree(values, index * 2 + 1);
+
+        // tree(index).right = 2 * index + 2
+        tree.right = createTree(values, index * 2 + 2);
+
+        return tree;
+
     }
+
 }

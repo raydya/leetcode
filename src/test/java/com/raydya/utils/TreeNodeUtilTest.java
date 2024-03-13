@@ -1,10 +1,11 @@
 package com.raydya.utils;
 
 import com.raydya.data.type.TreeNode;
-import java.util.Arrays;
-import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class TreeNodeUtilTest {
 
@@ -44,5 +45,18 @@ public class TreeNodeUtilTest {
 
         Assert.assertEquals(1, root.val);
         Assert.assertEquals(2, root.left.val);
+    }
+
+    @Test
+    public void test4() {
+        List<Integer> vals = Arrays.asList(1, 2, null, 3, 4, null, null, 5);
+        final TreeNode root = TreeNodeUtil.build(vals);
+
+        Assert.assertEquals(1, root.val);
+        Assert.assertEquals(2, root.left.val);
+        Assert.assertNull(root.right);
+        Assert.assertEquals(3, root.left.left.val);
+        Assert.assertEquals(4, root.left.right.val);
+        Assert.assertEquals(5, root.left.left.left.val);
     }
 }
